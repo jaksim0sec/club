@@ -25,6 +25,7 @@
       border: 1px solid black;
       border-radius: 10px;
       margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
     button
     {
@@ -32,6 +33,7 @@
       border: 1px solid black;
       border-radius: 10px;
       margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
     .basicbox
     {
@@ -39,14 +41,17 @@
       border: 1px solid black;
       border-radius: 10px;
       margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
     .learnbox
     {background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     width: 90%;
+    font-family:바탕체;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin: 10px;}
-    
+
       input[type="color"] {
         width: 30px;
         height: 30px;
@@ -138,23 +143,24 @@
       });" value="동아리의 목표" style = "position:fixed; top:10px; right:255px;">
   </div>
   <div id="logo" class="logo">
-    
-    <a href="/index.html">
-      <div style="font-size: 50px; color: black;">어서와!</div>
+
+    <a href="/index.html" style="font-family:바탕체;">
+      <div style="font-size: 50px; color: black; font-family:none;">어서와!</div>
       <div style="font-size: 30px; font-weight: bold; display: inline; margin-right: 0.5%; color: #40F99B;">코딩</div>
       <div style="font-size: 30px; display: inline;color: black;">동아리</div>
-      <div style = "height:100px"></div>
+      <div style="font-size:15px; color: black; margin-top:5px;">샛별중학교 소속</div>
+      <div style = "height:50px"></div>
     </a>
   </div>
   </center>
   <hr>
   <center>
     <div class ="basicbox" style = "weight : 100%; height : 160px;"><div style = "margin-top : 10px; font-size : 20px;">오늘의 동아리 목표</div> 
-    <div style = "height : 25px; background-color :#EAEAEA; color : white; border-radius:30px; width:500px;"> 동아리 OT 완료 </div>  
+    <div style = "height : 25px; background-color :#EAEAEA; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 일부 학습 완료 </div>  
     <hr style = "width : 30%;display:">
-    <div style = "height : 25px; background-color : #40F99B; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 일부 학습 완료 </div>  
+    <div style = "height : 25px; background-color : #40F99B; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 완료, CSS 기 학습 완료 </div>  
     <hr style = "width : 30%; display:">
-      <div style = "height : 25px; background-color :#EAEAEA; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 완료, JS 기본</div>  
+      <div style = "height : 25px; background-color :#EAEAEA; color : white; border-radius:30px; width:500px;"> 미결정</div>  
       <div style= "height : 10px"></div>
     </div>
   </center>
@@ -163,12 +169,12 @@
       <div id="listreal" style="display: flex; width: 100%;">
         <div class="basicbox" style="width: 20%; height: 150px;">
           <input type = "button" onclick="cs();
-            
+
           " value="순서대로 배우기"></input>
         <div style="width: 50px; height: 20%; background-color: #40F99B; display:inline; border-radius: 5px;">추천</div>
           <div> 회장이 준비한 순서대로 기초부터 배웁니다. </div>
         </div>
-        
+
         <div class="basicbox" style="width: 20%; height: 150px;">
         <input type = "button" value="서버작동구조 배우기" onclick="document.querySelector('.learnbox').style.display = 'none';
             document.querySelector('#hard').style.display = 'block';
@@ -176,14 +182,14 @@
           <div style="width: 50px; height: 20%; background-color: #FF5476; display:inline; border-radius: 5px;"> 심화 </div>
         <div> 학습하시면 좋지만 필수는 아닙니다. </div>
         </div>
-        
+
         <div class="basicbox" style="width: 20%; height: 150px;">
         <input type = "button" onclick="document.querySelector('.learnbox').style.display = 'none';
             document.querySelector('#learnhtml').style.display = 'block';
           " value="HTML 기본 문법 배우기"></input>
           <div style="width: 50px; height: 20%; background-color: #FFAC54; display:inline; border-radius: 5px;">필수</div>
         <div> 언어 html 을 학습합니다. </div></div>
-        
+
         <div class="basicbox" style="width: 20%; height: 150px;">
           <input type = "button" value="JS 기본 문법 배우기" onclick="document.querySelector('.learnbox').style.display = 'none';
               document.querySelector('#learnjs').style.display = 'block';
@@ -208,7 +214,7 @@
     <h5>자, 이제 첫번째 언어 html 을 배워봅시다.</h5>
   </div><!--cons_end-->
 
-  
+
   <div id="hard" style="display: none;" class="learnbox">
     <h5>추가 내용이 생길 예정입니다.</h5>
     <h4>사이트의 존재 방식과 DNS 시스템에 대해 기본적인 이론을 알려드리겠습니다.</h4>
@@ -224,7 +230,7 @@
     <h6>현재 준비된 내용이 끝났습니다. 추가될 예정입니다!</h6>
   </div><!--hard_end-->
 
-  
+
   <div id="learnhtml" style="display: none;" class="learnbox">
     <h1>html 이란?</h1>
     <h5>모든 웹사이트는 html 라는 프로그래밍 언어를 베이스로 제작됩니다. 웹사이트를 인간으로 비유하면 html 는 뼈에 해당하죠. 물론 이 웹사이트도 html 를 사용했어요</h5>
@@ -316,19 +322,99 @@
     <div style="height:50px;"></div>
   </div><!--learnhtml_end-->
 
-  
+
   <div id="learnjs" style="display: none;" class="learnbox"> 
     <h2 style="color:gray;">이런! 404 </h2>
     <h3 style="color:darkgray">아직 진도가 아닌것 같아요!</h3>
   </div><!--learnjs_end-->
 
-  
+
   <div id="learncss" style="display: none;" class="learnbox">
-    <h2 style="color:gray;">이런! 404</h2>
-    <h3 style="color:darkgray">아직 진도가 아닌것 같아요!</h3>
+    <h5>이제 HTML 의 디자인을 보완할 수 있는 언어 css 를 배워보겠습니다.</h5>
+    <h1>CSS 는 무엇인가요?</h1>
+    <h6>(Cascading Style Sheets 의 약자)</h6>
+    <h5>css 를 쉽게 정의 하자면, html 로 작성된 홈페이지의 디자인을 개선하기 위하여 작성하는 코드의 종류 입니다.</h5>
+    <h5>css를 사용하여 다양한 디자인의 변화를 줄 수 있습니다.</h5>
+    <h4 style = "color:#FFCD12; display:inline;">글꼴 색상과 종류</h4>
+    <h4 style = "color:#ED4C00; display:inline;"> 요소들의 배치 스타일</h4><h4 style = "color:#BCE55C; display:inline;"> 요소들의 배치 스타일</h4>
+    <h5>구체적으로 알아보겠습니다!</h5>
+    <hr>
+    <h1>코드 작성 방식</h1>
+    <h5>css 는 실제 프로그래밍 언어라고 하기보다는 html 라는 마크업언어에 선택적으로 디자인적 부분을 수정하는 코드 입니다.</h5>
+    <h5>html 요소(태그를 사용해서 만든 오브젝트, 예시로 img 요소나 h 요소)를 선택하고, 디자인을 수정할 수 있습니다.</h5>
+    <h5>CSS 를 html 도중에 사용하는 방식 첫번째를 알아보겠습니다. 아래는 html 에서 사용되는 h 태그의 글자색을 빨강색으로 바꿔주는 코드입니다.</h5>
+    <div id="code" class="basicbox" style = "background-color: #0B0D20; color: white;">
+      <div style = "">
+        &lt;style&gt;
+      </div>
+      <div style = "color:#FFBB00; display:inline;">h</div><div style = "display:inline;">
+      {
+     <div style = "color:#D9E5FF;">
+          color : red;
+    </div>
+    <div style = "">
+      }
+    </div>
+    <div style = "">
+      &lt;/style&gt;
+    </div>
+  </div>
+  </div>
+    <h5 style = "margin-bottom:10px;">한번 자세히 살펴보겠습니다.</h5>
+    <h3>&lt;style&gt; &lt;/style&gt;</h3>
+    <h5>html 문서 도중에 CSS 를 사용하기 위해 사용하는 태그 입니다. 위에 제시된 코드와 같이 두 태그 사이에 css 코드를 작성합니다.</h5>
+    <h5>이러한 방식으로 css 를 작성하면, 따로 css 적용 대상을 지정해줘야 합니다.</h5>
+    <div style = "height:10px;"></div>
+    <h5>지정 대상은 간단합니다.</h5>
+    <h5>"대상 태그 이름 {변경할 사항} " 처럼 작성합니다.</h5>
+    <h5>위 코드에서도 h(대상 태그 이름) {color:red; (변경할 사항)}  처럼 적용된 것 입니다.</h5>
+    <h5>"대상 태그 이름" (정식 용어로는 Selector) 에 태그 이름(예시 : h, a, img, div, hr) 를 입력하면 html 에 있는 모든 대상 태그에 {} 속 css 가 적용됩니다. 예를 들어 위의 코드는 문서의 모든 h 태그들의 글씨색을 붉게 만듭니다.</h5>
+    <h5>하지만 적용을 원하는 요소만 적용시키고 싶을 경우 아래와 같이 할 수 있습니다.</h5>
+    <img src='https://ifh.cc/g/zjqpL6.png' border='0' width ="1000px">
+    <hr>
+    <h5>css 를 html 에서 사용하는 두번쨰 방법을 알아보겠습니다. 아래 코드는 "div" 라는 html 의 태그 (다목적 상자(직사각형). div 와 /div 사이에 여러 태그를 끼워 넣을 수 있음. 그렇게 하면 파일처럼 묶어 사용할 수 있음) 의 크기를 아랫변길이 100픽셀, 높이 10픽셀 로 만든 후에 배경을 빨간색으로 채워 넣은 예시입니다. </h5>
+    <div id="code" class="basicbox" style = "background-color: #0B0D20; color: white;">
+      <div style = "">
+        &lt;div style = "background-color :red; width : 100px; height : 10px;"&gt;
+      </div>
+    <div style = "">
+      &lt;/div&gt;
+    </div>
+    </div>
+    <div style = "border-radius: 5px; border: solid black; width: 70px; height:20px;">적용예시</div>
+    <div style = "background-color:red;width:100px;height:10px; margin: 10px"></div>
+     <h5>위와 같이 꾸미고 싶은 태그 속에 style="꾸밀 내용(css)" 처럼 css 를 사용할 수 있습니다. </h5>
+    <hr>
+    <h5>css 를 html 에 사용하는 방식을 알아봤다면 이제는 css 자체의 문법을 알아보겠습니다.</h5>
+    <img src='https://ifh.cc/g/5ShVps.jpg' border='0' width = "1000px">
+    </div>
   </div>
   <!--learncss_end-->
     </center>
 </body>
 
 </html>
+
+<!--css 의 기본 문법을 살펴보겠습니다.-->
+<!--<style>
+  태그이름
+  {
+    설정할항목 : 설정값;
+    /**위와 같이 사용합니다. 예를 들어 설정할 항목은 color, 설정값은 빨강 과 같이 사용 가능합니다.**/
+  }
+  /**아래는 실제 설정항목의 종류입니다. 실제로는 훨씬 다양하며 인터넷에 검색함으로서 확인할 수 있습니다.**/
+  {
+    color:색상/* 글자색을 바꿈. hex 값 ( #000000 과 같은 색상 코드) 또는 red, blue, gray 같이 많이 쓰이는 색상*/;
+    background-color:색상/* 요소의 배경색을 바꿈. hex 값 ( #000000 과 같은 색상 코드) 또는 red, blue, gray 같이 많이 쓰이는 색상*/;
+    font-size : px/*폰트 크기를 설정해줌*/;
+    font-family : 글꼴/*글꼴을 설정해줌. 고딕, 바탕체, 궁서체 등이 있음*/;
+    width : px/*요소의 가로길이를 설정해줌*/;
+    height : px/*요소의 세로길이를 설정해줌*/;
+    margin : px/*다른 요소들을 선택 요소로 부터 설정값만큼 간격을 둠*/;
+    display:inline/*display:inline; 을 가지고 있는 주변에 다른 요소들과 같은줄로 배치됨*/;
+    display:none/*요소를 숨깁니다.*/;
+    opactiy : 숫자값 /*요소의 투명도를 설정해줍니다.*/;
+    border:px 종류 색상 /*요소에게 설정값(px) 두깨의 테두리를 설정한 색상으로 그려줍니다.종류는(solid:그냥직선/ dashed:점선) 등이 있습니다.*/
+  }
+</style>
+-->
