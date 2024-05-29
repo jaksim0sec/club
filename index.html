@@ -56,7 +56,7 @@
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
-
+    
     .button_head {
       top: 15px;
       background-color: white;
@@ -130,7 +130,7 @@
 </head>
 
 <body style="background-color: #D1D4DA; margin: 0; padding: 0;">
-  <div id="main_body" style="width: 100%; background-color: white; margin: 0; padding: 0;">
+  <div id="main_body" style="width: 100%; background-color: white; margin: 0; padding: 0; height:600px;">
     <div id="header" style="">
       <center>
         <div style="height: 20px;"></div>
@@ -187,19 +187,24 @@
           document.querySelector('body').style.backgroundColor= rdcolor; document.querySelector('body').style.color = '#272727';">#랜덤색상</button>
 
 
-
+  
 
         </div>
       </div>
     </div><!--setting_end-->
+
+    <button id="quiz" onclick="window.alert('아직 준비중입니다.')"
+    style="color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 14px; position:absolute; top: 10px; left: 60px; text-align: center;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894,#FF48D4);border:none; font-weight: bold; color:white;">Quiz</button>
+
+    
     <div id="middle_header" style="height: 200px; width: 100%; background-color: white;">
       <center>
         <div id="notice"
-          style="height:35px; background-color:#ECECEC; border-radius: 10px; margin-top: 10px; width: 80%;">
+          style="height:35px; background-color:#ECECEC; border-radius: 10px; margin-top: 10px; width: 85%;">
           <div class="label_saet" style="background-color: #FF7151; color: white; font-size: 13px; margin-top:10px;">신규
           </div>
           <div style="display:inline; font-size: 12px;">페이지 디자인을 포함한 전체 구성과 베이스 코드를 리뉴얼하였습니다. 또한 일부 설명의 내용을 구체적으로
-            수정하였습니다. 동아리 목표 기능은 이후에 추가될 예정입니다.
+            수정하였습니다. 또한 편리성을 위하여 "목차" 기능을 추가하였습니다.
             </div>
           <button
             style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 10px;"
@@ -208,10 +213,24 @@
             onclick="document.querySelector('#notice').style.display='none';">Ⅹ</button>
         </div><!--notice_end-->
       </center>
+    <center>
+    <div id="per">
+      <div class="basicbox" style="width:85%; height:150px;">
+        <div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
+        <div style="border-radius: 15px; border: 1.5px solid #9B9B9B; width: 40%;">
+        <div id="what1" style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">ERROR</div>
+        <div style="display: inline;">▶</div>
+        <div id="what2" style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">ERROR</div>
+        <div style="display: inline;">◀</div>
+        <div id="what3" style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">ERROR</div>
+      </div></div>
+    </div><!--per_end-->
+      </center>
+      
       <!--<div style="height:5px;"></div>-->
       <center>
 
-        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #40F99B; color: white; font-size: 13px; margin-top:10px;">추천
           </div>
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">순서대로 학습하기</div>
@@ -227,12 +246,12 @@
             style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #FF5476; color: white; font-size: 13px; margin-top:10px;">심화
           </div>
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">서버구동 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
-          <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다. 지속적으로 추가됩니다.</div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다.</div>
           <input type="button" id="boxer1" onclick="document.querySelector('#html_learn').style.display = 'none';
             document.querySelector('#css_learn').style.display = 'none';
             document.querySelector('#js_learn').style.display = 'none';
@@ -242,7 +261,7 @@
             style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #FFAC54; color: white; font-size: 13px; margin-top:10px;">필수
           </div>
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">HTML 학습하기</div>
@@ -257,7 +276,7 @@
             style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
           </div>
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">CSS 학습하기</div>
@@ -272,7 +291,7 @@
             style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
           </div>
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">JavaScript 학습하기</div>
@@ -696,6 +715,12 @@
       document.querySelector('#main_body').style.color = fontColor;
     }
     close("all");
+
+    let what = ["[동아리반일제] css 문법 이해","JS 기본 문법과 html 접근 이해","input 을 이용한 사용자 접근","고급기술, 라이버리 활용","미정","미정","미정"];
+    let date = new Date();
+    document.querySelector("#what1").textContent = what[date.getMonth()-4]
+    document.querySelector("#what2").textContent = what[date.getMonth()-3]
+    document.querySelector("#what3").textContent = what[date.getMonth()-2]
   </script>
 
 </body>
