@@ -40,9 +40,8 @@
       border-radius: 5px;
     }
 
-    .codespace
-    {
-      background-color:#120629;
+    .codespace {
+      background-color: #120629;
       border-radius: 10px;
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -56,7 +55,7 @@
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
-    
+
     .button_head {
       top: 15px;
       background-color: white;
@@ -187,16 +186,16 @@
           document.querySelector('body').style.backgroundColor= rdcolor; document.querySelector('body').style.color = '#272727';">#랜덤색상</button>
 
 
-  
+
 
         </div>
       </div>
     </div><!--setting_end-->
 
     <button id="quiz" onclick="window.alert('아직 준비중입니다.')"
-    style="color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 14px; position:absolute; top: 10px; left: 60px; text-align: center;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894,#FF48D4);border:none; font-weight: bold; color:white;">Quiz</button>
+      style="color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 14px; position:absolute; top: 10px; left: 60px; text-align: center;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894,#FF48D4);border:none; font-weight: bold; color:white;">Quiz</button>
 
-    
+
     <div id="middle_header" style="height: 200px; width: 100%; background-color: white;">
       <center>
         <div id="notice"
@@ -205,28 +204,33 @@
           </div>
           <div style="display:inline; font-size: 12px;">페이지 디자인을 포함한 전체 구성과 베이스 코드를 리뉴얼하였습니다. 또한 일부 설명의 내용을 구체적으로
             수정하였습니다. 또한 편리성을 위하여 "목차" 기능을 추가하였습니다.
-            </div>
-          <button
-            style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 10px;"
-            onmouseover="this.style.backgroundColor='#ACACAC';"
-            onmouseout="this.style.backgroundColor='#D3D3D3';"
+          </div>
+          <button style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 10px;"
+            onmouseover="this.style.backgroundColor='#ACACAC';" onmouseout="this.style.backgroundColor='#D3D3D3';"
             onclick="document.querySelector('#notice').style.display='none';">Ⅹ</button>
         </div><!--notice_end-->
       </center>
-    <center>
-    <div id="per">
-      <div class="basicbox" style="width:85%; height:150px;">
-        <div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
-        <div style="border-radius: 15px; border: 1.5px solid #9B9B9B; width: 40%;">
-        <div id="what1" style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">ERROR</div>
-        <div style="display: inline;">▶</div>
-        <div id="what2" style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">ERROR</div>
-        <div style="display: inline;">◀</div>
-        <div id="what3" style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">ERROR</div>
-      </div></div>
-    </div><!--per_end-->
+      <center>
+        <div id="per">
+          <div class="basicbox" style="width:85%; height:150px;">
+            <div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
+            <div style="border-radius: 15px; border: 1.5px solid #9B9B9B; width: 40%;">
+              <div id="what1"
+                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">
+                ERROR</div>
+              <div style="display: inline;">▶</div>
+              <div id="what2"
+                style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">
+                ERROR</div>
+              <div style="display: inline;">◀</div>
+              <div id="what3"
+                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">
+                ERROR</div>
+            </div>
+          </div>
+        </div><!--per_end-->
       </center>
-      
+
       <!--<div style="height:5px;"></div>-->
       <center>
 
@@ -312,37 +316,40 @@
       <center>
         <div id="main_learn"></div>
         <div style="height:200px"></div>
-        <div id="base_learn" class="basicbox" style="width: 90%; height:350px;">
+        <div id="base_learn" class="basicbox" style="width: 90%; height:450px;">
           <h2>학습목표와 동아리 진행</h2>
           <h5>우리 동아리에서 "웹개발부" 는 기본적으로 동아리원들에게 웹개발의 기본 문법을 가르치고, 이를 이용하여 동아리 대회에 발표할 "코딩과 게임개발부" 의 실행페이지를 엔트리의 "iframe"
             기능을 이용하여 제작할 예정입니다. </h5>
           <h5>우리가 웹개발을 할때 사용할 언어는 html, js, css 입니다.</h5>
-          <div style="width:65%; height:170px;border-radius: 10px;border : 1px solid #98A592;">
+          <div style="width:65%; height:210px;border-radius: 10px;border : 1px solid #CB3F3F;">
             <div
-              style="margin: 0px; paddign:0px; background:#BFD7B5; font-family:고딕체; border-radius: 10px; border:1px solid #BFD7B5;">
+              style="margin: 0px; paddign:0px; background: linear-gradient(150deg, #FF5E42, #FFAC9D, #FF5E42); font-family:고딕체; border-radius: 8.5px; border : 1px solid #CB3F3F; color: white; font-weight: bold;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);">
               목차
             </div>
             <div>
+              <hr style="width: 40%;">
               <button onclick="
                get('#html_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
                 onmouseover="this.style.backgroundColor='#DCDCDC';"
                 onmouseout="this.style.backgroundColor='white';">html 기본 문법</button>
+              <hr style="width: 40%;">
               <button onclick="
-                 get('#js_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
+                 get('#js_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 40%;"
                 onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='white';">js
                 기본 문법과 활용</button>
+              <hr style="width: 40%;">
               <button onclick="
                  get('#css_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
                 onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='white';">css
                 기본 문법과 활용</button>
+              <hr style="width: 40%;">
               <button onclick="
                  get('#advanced_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
                 onmouseover="this.style.backgroundColor='#DCDCDC';"
                 onmouseout="this.style.backgroundColor='white';">서버구동의 기본
             </div>
             <div style="height:10px;"></div>
-            <h6>클릭하여 해당 파트로 이동할 수 있습니다.
-            </h6>
+            <h6>(클릭하여 해당 파트로 이동할 수 있습니다.)</h6>
 
           </div>
         </div><!--baseend-->
@@ -446,13 +453,15 @@
           <h1>JavaScript 란?</h1>
           <p>JavaScript (js) 는 웹페이지를 동적으로 만들거나 요소를 생성, 관리, 삭제, 수정 할 수 있는 프로그래밍 언어입니다.</p>
           <p>JS 는 html 에서 &lt;script&gpt; 와 &lt;/script&gt; 사이에 작성됩니다.</p>
-           <h2>출력</h2>
-          <p>브라우저의 개발자 도구에는 주로 콘솔창이라고 불리는 도구가 있습니다. 여기에는 JavaScript 코드의 결과나 <code>console.log()</code>에서 출력한 메시지 등이 표시됩니다.</p>
+          <h2>출력</h2>
+          <p>브라우저의 개발자 도구에는 주로 콘솔창이라고 불리는 도구가 있습니다. 여기에는 JavaScript 코드의 결과나 <code>console.log()</code>에서 출력한 메시지 등이
+            표시됩니다.</p>
           <p><code>console.log()</code> 는 () 속의 값을 출력합니다.</p>
           <!-- 변수 -->
-        
+
           <h2>변수</h2>
-          <p>일반적으로 변수는 숫자나 글자, 또는 정보를 저장하고 참조할 수 있는 공간입니다. </p><p>변수는 각각의 이름을 가지고 있으며, 이후 이름을 통해 다시 참조할 수 있습니다.</p>
+          <p>일반적으로 변수는 숫자나 글자, 또는 정보를 저장하고 참조할 수 있는 공간입니다. </p>
+          <p>변수는 각각의 이름을 가지고 있으며, 이후 이름을 통해 다시 참조할 수 있습니다.</p>
           <p>( "//내용" 을 통하여 주석(메모) 를 작성 가능</p>
           <pre><div class="codespace">
               // 변수 선언
@@ -532,7 +541,8 @@
           <hr>
           <h2>html 접근 js 문법 - (1) 기본 접근 방식</h2>
           <h5>우선 아래 코드를 봅시다.</h5>
-          <div class="codespace"><pre>
+          <div class="codespace">
+            <pre>
             document.querySelector("body").style.backgroundColor = "red";
             //html 페이지에서 body 의 style 속성중 backgroundColor (background-color) 을 빨강으로 바꾸는 코드입니다.</pre>
           </div>
@@ -549,13 +559,15 @@
           </div>
           <p>로 볼 수 있습니다.</p>
           <h4>그럼 한번 위의 코드를 구체적으로 뜰어봅시다.</h4>
-          
+
           <h3>document</h3>
           <p>JavaScript에서 document는 현재 웹 페이지를 나타내는 객체입니다. 이 객체를 통해 웹 페이지의 구조를 조작하고 내용을 변경할 수 있습니다. </p>
           <h3>querySelector(대상)</h3>
-          <p>CSS 선택자를 사용하여 문서에서 요소를 선택하는 데 사용됩니다. 다른말로 () 에 대상 html 요소의 id 또는 class 를 작성하여 document 에서 어떤 요소를 접근할지 알리는 코드입니다.</p>
+          <p>CSS 선택자를 사용하여 문서에서 요소를 선택하는 데 사용됩니다. 다른말로 () 에 대상 html 요소의 id 또는 class 를 작성하여 document 에서 어떤 요소를 접근할지 알리는
+            코드입니다.</p>
           <h3>이후</h3>
-          <p>이후 부분에는 style / value 등등 대상 요소의 정보를 수정/생성/삭제 할 수 있습니다.</p><hr>
+          <p>이후 부분에는 style / value 등등 대상 요소의 정보를 수정/생성/삭제 할 수 있습니다.</p>
+          <hr>
           <p>오늘은 js 의 기본 문법과 html 의 접근을 알아봤습니다. 다음차시에는 input 을 이용한 사용자의 input 내용과 실제 행위에 대해 배우겠습니다.</p>
         </div><!--jsend-->
 
@@ -714,11 +726,11 @@
     }
     close("all");
 
-    let what = ["[동아리반일제] css 문법 이해","JS 기본 문법과 html 접근 이해","input 을 이용한 사용자 접근","고급기술, 라이버리 활용","미정","미정","미정"];
+    let what = ["html 기본 문법 이해","[동아리반일제] css 문법 이해", "JS 기본 문법과 html 접근 이해", "input 을 이용한 사용자 접근", "고급기술, 라이버리 활용", "미정", "미정", "미정"];
     let date = new Date();
-    document.querySelector("#what1").textContent = what[date.getMonth()-4];
-    document.querySelector("#what2").textContent = what[date.getMonth()-3];
-    document.querySelector("#what3").textContent = what[date.getMonth()-2];
+    document.querySelector("#what1").textContent = what[date.getMonth() - 4];
+    document.querySelector("#what2").textContent = what[date.getMonth() - 3];
+    document.querySelector("#what3").textContent = what[date.getMonth() - 2];
     //var userAgent = navigator.userAgent;
 
     //console.log("User Agent:", userAgent);
