@@ -1,0 +1,283 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>샛별중학교 코딩동아리 : 홈</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="https://i.ibb.co/TbHQb6K/721wx-Lr-Imgur.png">
+  <style>
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:underline {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="button"] {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      top: 15px;
+      background-color: white;
+      height: 22px;
+      width: 110px;
+      border: 1px solid #DADADA;
+      border-radius: 5px;
+    }
+
+    .codespace {
+      background-color: #120629;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .basicbox {
+      background-color: white;
+      border: 1px solid #DADADA;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button_head {
+      top: 15px;
+      background-color: white;
+      height: 22px;
+      width: 110px;
+      border: 1px solid #DADADA;
+      border-radius: 8px;
+      position: fixed;
+    }
+
+    #timerline {
+      margin: 20px;
+      height: 15px;
+      border-radius: 20px;
+      background-color: black;
+      transition: width 0.5s ease; /* 길이 변화를 부드럽게 만듭니다. */
+    }
+
+    .label_saet {
+      width: 45px;
+      font-weight: 700;
+      height: 18px;
+      display: inline-block;
+      border-radius: 5px;
+      margin: 0px;
+      font-size: 13px;
+    }
+
+    /* input[type="color"] 스타일 */
+    input[type="color"] {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    button {
+      width: 80px;
+      height: 22px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border-radius: 30px;
+      border: none;
+    }
+
+    /* .tager 클래스 스타일 */
+    .tager {
+      border: 1px solid #CCCCCC;
+      border-radius: 15px;
+    }
+
+    /* 스크롤바 스타일 */
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      border: 3px solid transparent;
+      box-shadow: inset 6px 6px 0;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    .selectbutton
+    {
+      font-size: 100px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+  <center>
+    <div id="logo">
+      <div style="font-size: 30px; display: inline;">동아리</div>
+      <div style="margin: 5px; font-size: 30px;border:none; font-weight: bold; display: inline-block;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894, #FF48D4);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;">Quiz</div>
+      <div style="color:white; background-color:#eb4034;font-size: 12px;" class="label_saet">베타β</div>
+    </div>
+  </center>
+  <input class="button_head" type="button" onclick="window.location.href = 'https://saetcodingclub.vercel.app';"
+    value="홈으로 돌아가기" style="top:10px; right:25px;">
+  <div style="height:100%; width:100%; background-color:#D1D4DA;">
+    <div id="inquiz">
+      <center>
+        <div style="height:50px;"></div>
+        <div id="quizinfo" style="font-size: 30px;">
+          퀴즈 내용
+        </div>
+        <div style="height:20px"></div>
+        <button id="true" style="width: 35%; height:500px; background-color: #A9ECC3; display: inline-block;" class="selectbutton" onclick="check(true);">O</button>
+        <div style="display: inline-block; width:2%"></div>
+        <button id="false" style="width: 35%; height:500px; background-color: #FFCECE;display:inline-block;" class="selectbutton" onclick="check(false);">X</button>
+        <div id="timerline" style="width: 80%;"></div>
+      </center>
+    </div>
+    <center>
+    <div id="result" style="display: none;">
+      <div style="font-size: 30px;">
+        결과
+      </div>
+      <div id="resultline" style="width: 60%; height:50px; font-size: 20px;">
+        
+      </div>
+    </div>
+
+      </center>
+  </div>
+
+
+  <script>
+    const quiz = [
+      ["HTML 문서는 항상 &lt;html&gt; 태그로 시작하고 끝나야 한다.", true],
+      ["&lt;p&gt; 태그는 단락(paragraph)을 나타낸다.", true],
+      ["&lt;br&gt; 태그는 줄 바꿈을 생성한다.", true],
+      ["모든 HTML 태그는 닫는 태그가 필요하다.", false],
+      ["&lt;h1&gt; 태그는 가장 큰 크기의 제목을 나타낸다.", true],
+      ["CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 데 사용된다.", true],
+      ["CSS에서 색상은 color 속성으로 설정할 수 있다.", true],
+      ["CSS 파일의 확장자는 .css이다.", true],
+      ["CSS에서 font-size 속성은 글꼴의 크기를 설정한다.", true],
+      ["CSS에서 #myId는 클래스 선택자를 나타낸다.", false],
+      ["JavaScript는 웹 페이지에 동적인 기능을 추가하는 데 사용된다.", true],
+      ["alert() 함수는 팝업 창을 생성하여 메시지를 표시한다.", true],
+      ["JavaScript 변수는 let 또는 var 키워드로 선언할 수 있다.", true],
+      ["JavaScript는 대소문자를 구분하지 않는다.", false],
+      ["document.getElementById()는 HTML 요소를 선택하는 데 사용된다.", true]
+    ];
+    let truefalse = [];
+    let quiz_num = 0;
+    let quiztext = document.querySelector("#quizinfo");
+    let timerline = document.querySelector("#timerline");
+    let timeLeft = 10;
+    let timerInterval;
+
+    function start() {
+      quiztext.innerHTML = quiz[quiz_num][0];
+      startTimer();
+    }
+
+    function check(select) {
+      clearInterval(timerInterval); // 정답을 선택했으므로 타이머 중지
+      if (select == quiz[quiz_num][1]) {
+        truefalse.push(true);
+      } else {
+        truefalse.push(false);
+      }
+      quiz_num++;
+      if (quiz_num < quiz.length) {
+        timeLeft = 10; // 다음 문제로 넘어가기 전에 시간 초기화
+        start();
+      } else {
+        result();
+      }
+    }
+
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(timerInterval);
+          
+          timeLeft = 10;
+          quiz_num++;
+          if (quiz_num < quiz.length) {
+            start();
+          } else {
+            result();
+          }
+        } else {
+          timerline.style.width = (timeLeft / 10) * 80 + "%";
+          timeLeft--;
+        }
+      }, 1000);
+    }
+    function result() {
+      document.querySelector("#inquiz").style.display = "none";
+      document.querySelector("#result").style.display = "block";
+
+      var resultDiv = document.querySelector("#resultline");
+
+      for (var i = 0; i < truefalse.length; i++) {
+        var newSpan = document.createElement("span");
+        var newText = document.createTextNode("");
+
+        if (truefalse[i]) {
+          newText.textContent += "O";
+          newSpan.style.color = "#A9ECC3"; // 초록색
+        } else {
+          newText.textContent += "X";
+          newSpan.style.color = "#FFCECE"; // 빨간색
+        }
+
+        newSpan.appendChild(newText);
+        resultDiv.appendChild(newSpan);
+      }
+    }
+
+
+
+
+    start();
+  </script>
+</body>
+</html>
