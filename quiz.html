@@ -151,7 +151,7 @@
   <center>
     <div id="logo">
       <div style="font-size: 30px; display: inline;">동아리</div>
-      <div style="margin: 5px; font-size: 30px;border:none; font-weight: bold; display: inline-block;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894, #FF48D4);
+      <div style="margin: 5px; font-size: 30px;border:none; font-weight: bold; display: inline-block;background: linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Quiz</div>
       <div style="color:white; background-color:#eb4034;font-size: 12px;" class="label_saet">베타β</div>
@@ -167,18 +167,20 @@
           퀴즈 내용
         </div>
         <div style="height:20px"></div>
-        <button id="true" style="width: 35%; height:500px; background-color: #A9ECC3; display: inline-block;" class="selectbutton" onclick="check(true);">O</button>
+        <button id="true" style="width: 35%; height:500px; background-color: #68E289; display: inline-block;" class="selectbutton" onclick="check(true);">O</button>
         <div style="display: inline-block; width:2%"></div>
-        <button id="false" style="width: 35%; height:500px; background-color: #FFCECE;display:inline-block;" class="selectbutton" onclick="check(false);">X</button>
+        <button id="false" style="width: 35%; height:500px; background-color: #E77265;display:inline-block;" class="selectbutton" onclick="check(false);">X</button>
         <div id="timerline" style="width: 80%;"></div>
       </center>
     </div>
     <center>
-    <div id="result" style="display: none;">
+    <div id="result" style="display: none; background-color: white;">
+      <hr>
       <div style="font-size: 30px;">
+        <div style="height: 20px;"></div>
         결과
       </div>
-      <div id="resultline" style="width: 60%; height:50px; font-size: 20px;">
+      <div id="resultline" style="width: 60%; height:50px; font-size: 30px; background-color: grey; border-radius: 20px;">
         
       </div>
     </div>
@@ -263,10 +265,10 @@
 
         if (truefalse[i]) {
           newText.textContent += "O";
-          newSpan.style.color = "#A9ECC3"; // 초록색
+          newSpan.style.color = "#68E289";
         } else {
           newText.textContent += "X";
-          newSpan.style.color = "#FFCECE"; // 빨간색
+          newSpan.style.color = "#E77265";
         }
 
         newSpan.appendChild(newText);
