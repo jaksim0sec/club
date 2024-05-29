@@ -310,9 +310,7 @@
 
     <div id="bodyer">
       <center>
-        <div id="main_learn" class="basicbox" style="width: 90%;">
-
-        </div><!--mainend-->
+        <div id="main_learn"></div>
         <div style="height:200px"></div>
         <div id="base_learn" class="basicbox" style="width: 90%; height:350px;">
           <h2>학습목표와 동아리 진행</h2>
@@ -718,15 +716,15 @@
 
     let what = ["[동아리반일제] css 문법 이해","JS 기본 문법과 html 접근 이해","input 을 이용한 사용자 접근","고급기술, 라이버리 활용","미정","미정","미정"];
     let date = new Date();
-    document.querySelector("#what1").textContent = what[date.getMonth()-4]
-    document.querySelector("#what2").textContent = what[date.getMonth()-3]
-    document.querySelector("#what3").textContent = what[date.getMonth()-2]
-    var userAgent = navigator.userAgent;
+    document.querySelector("#what1").textContent = what[date.getMonth()-4];
+    document.querySelector("#what2").textContent = what[date.getMonth()-3];
+    document.querySelector("#what3").textContent = what[date.getMonth()-2];
+    //var userAgent = navigator.userAgent;
 
-    console.log("User Agent:", userAgent);
-    if (userAgent.match(/Mobile/i) || userAgent.match(/Mobi/i)) {
-        window.alert("이 홈페이지 UI는 모바일 환경에서 적절하게 작동하지 않을 수 있습니다.")
-    }
+    //console.log("User Agent:", userAgent);
+    //if (userAgent.match(/Mobile/i) || userAgent.match(/Mobi/i)) {
+       // window.alert("이 홈페이지 UI는 모바일 환경에서 적절하게 작동하지 않을 수 있습니다.")
+    //}
   </script>
 
 </body>
