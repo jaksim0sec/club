@@ -1,148 +1,186 @@
-<html><head>
+<html>
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>샛별중학교 코딩동아리 웹개발팀 전용 페이지</title>
-  <link rel="shortcut icon" href="https://i.ibb.co/TbHQb6K/721wx-Lr-Imgur.png">
+  <title>샛별중학교 코딩동아리 : 홈</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="https://i.ibb.co/TbHQb6K/721wx-Lr-Imgur.png">
   <style>
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
 
-    .logo{a:link {color: white; text-decoration: none;}}
-         a:visited {color: white; text-decoration: none;}
-         a:hover {text-decoration: none;}
-         a:underline {text-decoration: none;}
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
 
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:underline {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="button"] {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      top: 15px;
+      background-color: white;
+      height: 22px;
+      width: 110px;
+      border: 1px solid #DADADA;
+      border-radius: 5px;
+    }
+
+    .codespace
+    {
+      background-color:#120629;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .basicbox {
+      background-color: white;
+      border: 1px solid #DADADA;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button_head {
+      top: 15px;
+      background-color: white;
+      height: 22px;
+      width: 110px;
+      border: 1px solid #DADADA;
+      border-radius: 8px;
+      position: fixed;
+    }
+
+    .label_saet {
+      width: 45px;
+      font-weight: 700;
+      height: 18px;
+      display: inline-block;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 13px;
+    }
+
+    /* input[type="color"] 스타일 */
+    input[type="color"] {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    button {
+      width: 80px;
+      height: 22px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border-radius: 30px;
+      border: none;
+    }
+
+    /* .tager 클래스 스타일 */
+    .tager {
+      border: 1px solid #CCCCCC;
+      border-radius: 15px;
+    }
+
+    /* 스크롤바 스타일 */
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      border: 3px solid transparent;
+      box-shadow: inset 6px 6px 0;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
   </style>
 </head>
 
-<body>
-  <style>
-    input[type = "button"]
-    {
-      background-color: white;
-      border: 1px solid #CCCCCC;
-      border-radius: 10px;
-      margin: 10px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    button
-    {
-      background-color: white;
-      border: 1px solid #CCCCCC;
-      border-radius: 10px;
-      margin: 10px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    .basicbox
-    {
-      background-color: white;
-      border: 1px solid #CCCCCC;
-      border-radius: 10px;
-      margin: 10px;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    }
-    .learnbox
-    {background-color: white;
-    border: 1px solid #CCCCCC;
-    border-radius: 10px;
-    width: 90%;
-    font-family:바탕체;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    margin: 10px;}
-
-      input[type="color"] {
-        width: 30px;
-        height: 30px;
-        border: 1px solid #CCCCCC;
-        border-radius: 10px;
-        background-color: white;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-      }
-
-      input[type="color"]::-webkit-color-swatch {
-        border-radius: 30px;
-        border: none;
-      }
-
-			.tager 
-		{
-			border: 1px solid #CCCCCC;
-			border-radius: 15px;
-		}
-		::-webkit-scrollbar {
-				width: 12px;
-				height: 12px;
-		}
-
-		::-webkit-scrollbar-thumb {
-				outline: none;
-				border-radius: 10px;
-				border: 3px solid transparent;
-				box-shadow: inset 6px 6px 0; 
-		}
-
-		::-webkit-scrollbar-track {
-				box-shadow: none;
-				background-color: transparent;
-		}
-  </style>
-  <script>
-    function learnhtml() {
-      document.querySelector('.learnbox').style.display = 'none';
-      document.querySelector('#learnhtml').style.display = 'block';
-    }
-    function SettingWindowOPCL() {
-      var settingWindow = document.getElementById('settingwindow');
-      var SettingOPCL = document.getElementById('settingbutton');
-
-      if (SettingOPCL.textContent === "x") 
-      {
-        settingWindow.style.opacity = 0;
-        SettingOPCL.textContent = "⚙";
-      } 
-      else 
-      {
-        settingWindow.style.opacity = 1;
-        SettingOPCL.textContent  = "x";
-      }
-    }
-
-    function changeBackgroundColor() {
-      var backgroundColor = document.getElementById('backgroundColor').value;
-      document.querySelector('body').style.backgroundColor = backgroundColor;
-    }
-
-    function changeFontColor() {
-      var fontColor = document.getElementById('fontColor').value;
-      document.querySelector('body').style.color = fontColor;
-    }
-
-    function cs(){
-      document.querySelector('#cons').style.display = 'block';
-      document.querySelector('#learnhtml').style.display = 'block';
-      document.querySelector('#learnjs').style.display = 'block';
-      document.querySelector('#learncss').style.display = 'block';
-    }
-  </script>
-  <center>
-    <button id="settingbutton" onclick="SettingWindowOPCL()" style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 20px; position:absolute; top: 10px; left: 10px;">⚙</button>
-    <div class="setting" id="settingwindow" style="opacity: 0%; width: 320px; border: 1px solid #CCCCCC; height:auto; margin: 10px; border-radius: 5px; background-color: white; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); position: absolute; top:70px; left:10px;">
-      <div class="backgroundColor" style="margin: 10px;">
-        <div>배경색 설정</div>
-        <input type="color" class="setting" id="backgroundColor">
-        <button class="setting" onclick="changeBackgroundColor()" style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
-      </div>
-      <div class="fontColor" style="margin: 10px;">
-        <div>글자색 지정(비추천 기능)</div>
-        <input type="color" class="setting" id="fontColor">
-        <button class="setting" onclick="changeFontColor()" style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
-      </div>
-      <div class="ColorReco" style="margin: 10px;">
-        <div>추천색상</div>
-        <button style="background-color: #DEBF9C; margin-left: 0px;" class="setting" onclick="document.querySelector('body').style.backgroundColor = '#F4DFC7';document.querySelector('body').style.color = '#272727';">#카페같은</button>
-        <button style="background-color: #E2AE98; margin-left: 0px;" class="setting" onclick="document.querySelector('body').style.backgroundColor = '#FFE6DB';document.querySelector('body').style.color = '#350303';">#봄이좋냐</button>
-        <button style="background: linear-gradient(150deg, #F8FFFF, #D4F4FA, #fff1d1, #FBC3AB); margin-left: 0px; color: #272727;" class="setting" onclick="
+<body style="background-color: #D1D4DA; margin: 0; padding: 0;">
+  <div id="main_body" style="width: 100%; background-color: white; margin: 0; padding: 0;">
+    <div id="header" style="">
+      <center>
+        <div style="height: 20px;"></div>
+        <a href="saetcodingclub.vercel.app" id="logo" style="color: black;">
+          <div style="font-size: 50px; ">어서와!</div>
+          <div style="font-size: 30px; font-weight: bold; display: inline; margin-right: 0.5%; color: #40F99B;">코딩</div>
+          <div style="font-size: 30px; display: inline;">동아리</div>
+          <div style="font-size: 13px;">샛별중학교</div>
+          <hr color="white" style="margin: 2%;">
+        </a>
+      </center>
+      <div id="button_head">
+        <input class="button_head" type="button"
+          onclick="window.location.href = 'https://padlet.com/saetbyeolt240003/padlet-iuuw33c5xk5ngqki';"
+          value="동아리 페들렛" style="top:10px; right:140px;">
+        <input class="button_head" type="button" onclick="window.location.href = '/index.html';" value="홈으로 돌아가기"
+          style="top:10px; right:25px;">
+        <input class="button_head" type="button" onclick="window.scrollTo({
+            top: 100,
+            behavior: 'smooth'
+          });" value="동아리의 목표" style="top:10px; right:255px;">
+      </div><!--buttons_head_end-->
+    </div><!--header_end-->
+    <div id="setting">
+      <button id="settingbutton" onclick="SettingWindowOPCL()"
+        style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 20px; position:absolute; top: 10px; left: 10px;">⚙</button>
+      <div class="setting" id="settingwindow"
+        style="opacity: 0%; width: 320px; border: 1px solid #CCCCCC; height:auto; margin: 10px; border-radius: 5px; background-color: white; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); position: absolute; top:70px; left:10px;">
+        <div class="backgroundColor" style="margin: 10px;">
+          <div>배경색 설정</div>
+          <input type="color" class="setting" id="backgroundColor">
+          <button class="setting" onclick="changeBackgroundColor()"
+            style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
+        </div>
+        <div class="fontColor" style="margin: 10px;">
+          <div>글자색 지정(비추천 기능)</div>
+          <input type="color" class="setting" id="fontColor">
+          <button class="setting" onclick="changeFontColor()"
+            style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
+        </div>
+        <div class="ColorReco" style="margin: 10px;">
+          <div>추천색상</div>
+          <button style="background-color: #DEBF9C; margin-left: 0px; border:none;" class="setting"
+            onclick="document.querySelector('body').style.backgroundColor = '#F4DFC7';document.querySelector('body').style.color = '#272727';">#카페같은</button>
+          <button style="background-color: #E2AE98; margin-left: 0px;border:none;" class="setting"
+            onclick="document.querySelector('body').style.backgroundColor = '#FFE6DB';document.querySelector('body').style.color = '#350303';">#봄이좋냐</button>
+          <button
+            style="background: linear-gradient(150deg, #F8FFFF, #D4F4FA, #fff1d1, #FBC3AB); margin-left: 0px; color: #272727;border:none;"
+            class="setting"
+            onclick="
           var randomColor = Math.floor(Math.random() * 16777216).toString(16);
           let rdcolor =  '#' + ('000000' + randomColor).slice(-6);
 
@@ -151,280 +189,514 @@
 
 
 
+        </div>
       </div>
-    </div>
-  <div id="headbutton">
-    <input type="button" onclick="window.location.href = 'https://padlet.com/saetbyeolt240003/padlet-iuuw33c5xk5ngqki';" value="동아리 페들렛" style="position:fixed; top:10px; right:140px;">
-    <input type="button" onclick="window.location.href = '/index.html';" value="홈으로 돌아가기" style="position:fixed; top:10px; right:10px;">
-    <input type="button" onclick="window.scrollTo({
-        top: 100,
-        behavior: 'smooth'
-      });" value="동아리의 목표" style="position:fixed; top:10px; right:255px;">
-  </div>
-  <div id="logo" class="logo">
+    </div><!--setting_end-->
+    <div id="middle_header" style="height: 200px; width: 100%; background-color: white;">
+      <center>
+        <div id="notice"
+          style="height: 35px; background-color:#ECECEC; border-radius: 10px; margin-top: 10px; width: 70%;">
+          <div class="label_saet" style="background-color: #FF7151; color: white; font-size: 13px; margin-top:10px;">신규
+          </div>
+          <div style="display:inline; font-size: 13px;">페이지 디자인을 포함한 전체 구성과 베이스 코드를 리뉴얼하였습니다. 또한 일부 설명의 내용을 구체적으로
+            수정하였습니다.</div>
+          <button
+            style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 20px;"
+            onmouseover="this.style.backgroundColor='#ACACAC';"
+            onmouseout="this.style.backgroundColor='#D3D3D3';"
+            onclick="document.querySelector('#notice').style.display='none';">Ⅹ</button>
+        </div><!--notice_end-->
+      </center>
+      <!--<div style="height:5px;"></div>-->
+      <center>
 
-    <a href="/index.html" style="font-family:바탕체;">
-      <div style="font-size: 50px; color: #272727; font-family:none;">어서와!</div>
-      <div style="font-size: 30px; font-weight: bold; display: inline; margin-right: 0.5%; color: #40F99B;">코딩</div>
-      <div style="font-size: 30px; display: inline;color: #272727;">동아리</div>
-      <div style="font-size:15px; color: #272727; margin-top:5px;">샛별중학교 소속</div>
-      <div style="height:50px"></div>
-    </a>
-  </div>
-  </center>
-  <hr style="box-shadow: inset 6px 6px 5; ">
-  <center>
-    <div class="basicbox" style="weight : 100%; height : 160px;"><div style="margin-top : 10px; font-size : 20px;">⭐오늘의 동아리 목표⭐</div> 
-    <div style="height : 25px; background-color :#B5B8B5; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 일부 학습 완료 </div>  
-    <hr style="width : 30%;display:">
-    <div style="height : 25px; background-color : #40F99B; color : white; border-radius:30px; width:500px;"> HTML 기본 개념 완료, CSS 기 학습 완료 + 영화상영 </div>  
-    <hr style="width : 30%; display:">
-      <div style="height : 25px; background-color :#B5B8B5; color : white; border-radius:30px; width:500px;"> 미결정</div>  
-      <div style="height : 10px"></div>
-    </div>
-  </center>
-	<div id="notice" class="basicbox" style="height:50px">
-		<center>
-			<div style="background-color: #FF7E72; color:white;display: inline-flex; border-radius: 10px; font-size: 12px; width: 60px;text-align: center;align-items: center;
-        justify-content: center;">업뎃공지</div>
-			<div style="display: inline; font-size: 13px; margin: 10px;">정말 사소하시만 약간의 그림자 효과와 스크롤바의 디자인을 변경하고 css 설명을 추가했어요!</div>
-		</center>
-	</div>
-  <div class="list">
-    <center>
-      <div id="listreal" style="display: flex; width: 100%;">
-        <div class="basicbox" style="width: 20%; height: 150px;">
-          <input type="button" onclick="cs();
-
-          " value="순서대로 배우기">
-        <div class="tager" style="width: 50px; height: 20%; background-color: #40F99B; display:inline; border-radius: 5px;">추천</div>
-          <div> 회장이 준비한 순서대로 기초부터 배웁니다. </div>
+        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+          <div class="label_saet" style="background-color: #40F99B; color: white; font-size: 13px; margin-top:10px;">추천
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">순서대로 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">동아리의 모든 수업을 순서대로 배울 수 있습니다.</div>
+          <input type="button" id="boxer0" onclick="
+            document.querySelector('#html_learn').style.display = 'block';
+            document.querySelector('#css_learn').style.display = 'block';
+            document.querySelector('#js_learn').style.display = 'block';
+            document.querySelector('#main_learn').style.display = 'block';
+            document.querySelector('#advanced_learn').style.display = 'block';
+            document.querySelector('#base_learn').style.display = 'block';" value="시작하기"
+            style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 20%; height: 150px;">
-        <input type="button" value="서버작동구조 배우기" onclick="document.querySelector('.learnbox').style.display = 'none';
-            document.querySelector('#hard').style.display = 'block';
-          ">
-          <div class="tager" style="width: 50px; height: 20%; background-color: #FF5476; display:inline; border-radius: 5px;"> 심화 </div>
-        <div> 학습하시면 좋지만 필수는 아닙니다. </div>
+        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+          <div class="label_saet" style="background-color: #FF5476; color: white; font-size: 13px; margin-top:10px;">심화
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">서버구동 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다. 지속적으로 추가됩니다.</div>
+          <input type="button" id="boxer1" onclick="document.querySelector('#html_learn').style.display = 'none';
+            document.querySelector('#css_learn').style.display = 'none';
+            document.querySelector('#js_learn').style.display = 'none';
+            document.querySelector('#main_learn').style.display = 'none';
+            document.querySelector('#advanced_learn').style.display = 'block';
+            document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
+            style="width: 100px; margin: 10px;">
         </div>
 
-        <div class="basicbox" style="width: 20%; height: 150px;">
-        <input type="button" onclick="document.querySelector('.learnbox').style.display = 'none';
-            document.querySelector('#learnhtml').style.display = 'block';
-          " value="HTML 기본 문법 배우기">
-          <div class="tager" style="width: 50px; height: 20%; background-color: #FFAC54; display:inline; border-radius: 5px;">필수</div>
-        <div> 언어 html 을 학습합니다. </div></div>
+        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+          <div class="label_saet" style="background-color: #FFAC54; color: white; font-size: 13px; margin-top:10px;">필수
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">HTML 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">HTML 의 기본 문법과 활용을 배웁니다.</div>
+          <input type="button" id="boxer2" onclick="document.querySelector('#html_learn').style.display = 'block';
+            document.querySelector('#css_learn').style.display = 'none';
+            document.querySelector('#js_learn').style.display = 'none';
+            document.querySelector('#main_learn').style.display = 'none';
+            document.querySelector('#advanced_learn').style.display = 'none';
+            document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
+            style="width: 100px; margin: 10px;">
+        </div>
 
-        <div class="basicbox" style="width: 20%; height: 150px;">
-          <input type="button" value="JS 기본 문법 배우기" onclick="document.querySelector('.learnbox').style.display = 'none';
-              document.querySelector('#learnjs').style.display = 'block';
-            ">
-          <div> 언어 JS 을 학습합니다. </div></div>
-        <div class="basicbox" style="width: 20%; height: 150px;">
-        <input type="button" value="CSS 기본 문법 배우기" onclick="document.querySelector('.learnbox').style.display = 'none';
-            document.querySelector('#learncss').style.display = 'block';
-          ">
+        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+          <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">CSS 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">CSS 의 기본 문법과 활용을 배웁니다.</div>
+          <input type="button" id="boxer3" onclick="document.querySelector('#html_learn').style.display = 'none';
+            document.querySelector('#css_learn').style.display = 'block';
+            document.querySelector('#js_learn').style.display = 'none';
+            document.querySelector('#main_learn').style.display = 'none';
+            document.querySelector('#advanced_learn').style.display = 'none';
+            document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
+            style="width: 100px; margin: 10px;">
+        </div>
 
-        <div> 언어 CSS 을 학습합니다. </div></div>
-    </div></center>
-  </div><!--list_end-->
+        <div class="basicbox" style="width: 240px; height: 120px; margin-top: 50px; display: inline-block;">
+          <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">JavaScript 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">JavaScript 의 기본 문법과 활용을 배웁니다.</div>
+          <input type="button" id="boxer4" onclick="document.querySelector('#html_learn').style.display = 'none';
+            document.querySelector('#css_learn').style.display = 'none';
+            document.querySelector('#js_learn').style.display = 'block';
+            document.querySelector('#main_learn').style.display = 'none';
+            document.querySelector('#advanced_learn').style.display = 'none';
+            document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
+            style="width: 100px; margin: 10px;">
+        </div>
+      </center>
+    </div><!--middle_header_end-->
 
-  <center>
-  <div id="cons" style="display: none;" class="learnbox">
-    <h1>우리 동아리의 목적</h1>
-    <h5>우리 동아리에서 웹개발부는 기본적으로 웹개발사이트를 개발할 수 있도록 학생들을 교육한 이후에, 자신의 개성을 표현한 사이트를 구현하여 샛별제 때 정한 주제의 사이트를 공개할 예정입니다.</h5>
-    <h2>웹사이트란?</h2>
-    <h4>웹사이트가 뭔지는 보통 아실겁니다. 네이버나 구글, 심지어 지금 접속하시고 계신 회장이 만든 웹페이지 까지, 모두 웹사이트 입니다.</h4>
-    <h4>웹사이트는 html, js, css 로 이루어졌는데, 각각 사이트의 뼈, 장기와 뇌, 피부 에 해당합니다.</h4>
-    <h5>자, 이제 첫번째 언어 html 을 배워봅시다.</h5>
-  </div><!--cons_end-->
+    <div id="bodyer">
+      <center>
+        <div id="main_learn" class="basicbox" style="width: 90%;">
 
+        </div><!--mainend-->
+        <div style="height:20px"></div>
+        <div id="base_learn" class="basicbox" style="width: 90%; height:350px;">
+          <h2>학습목표와 동아리 진행</h2>
+          <h5>우리 동아리에서 "웹개발부" 는 기본적으로 동아리원들에게 웹개발의 기본 문법을 가르치고, 이를 이용하여 동아리 대회에 발표할 "코딩과 게임개발부" 의 실행페이지를 엔트리의 "iframe"
+            기능을 이용하여 제작할 예정입니다. </h5>
+          <h5>우리가 웹개발을 할때 사용할 언어는 html, js, css 입니다.</h5>
+          <div style="width:65%; height:170px;border-radius: 10px;border : 1px solid #98A592;">
+            <div
+              style="margin: 0px; paddign:0px; background:#BFD7B5; font-family:고딕체; border-radius: 10px; border:1px solid #BFD7B5;">
+              목차
+            </div>
+            <div>
+              <button onclick="
+               get('#html_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
+                onmouseover="this.style.backgroundColor='#DCDCDC';"
+                onmouseout="this.style.backgroundColor='white';">html 기본 문법</button>
+              <button onclick="
+                 get('#js_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
+                onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='white';">js
+                기본 문법과 활용</button>
+              <button onclick="
+                 get('#css_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
+                onmouseover="this.style.backgroundColor='#DCDCDC';" onmouseout="this.style.backgroundColor='white';">css
+                기본 문법과 활용</button>
+              <button onclick="
+                 get('#advanced_learn').scrollIntoView({ behavior: 'smooth' });" style="border: none; width: 70%;"
+                onmouseover="this.style.backgroundColor='#DCDCDC';"
+                onmouseout="this.style.backgroundColor='white';">서버구동의 기본
+            </div>
+            <div style="height:10px;"></div>
+            <h6>클릭하여 해당 파트로 이동할 수 있습니다.
+            </h6>
 
-  <div id="hard" style="display: none;" class="learnbox">
-    <h5>추가 내용이 생길 예정입니다.</h5>
-    <h4>사이트의 존재 방식과 DNS 시스템에 대해 기본적인 이론을 알려드리겠습니다.</h4>
-    <img src="https://ifh.cc/g/53Rfwc.png" border="0" width="1000px">
-    <h4>우선 이 용어들에 익숙해지셔야 합니다.</h4>
-    <h4>그래서 DNS 시스템과 웹사이트의 형태를 시각화 하면 아래의 그림과 같습니다.</h4>
-  <img src="https://ifh.cc/g/oazmg6.png" border="0" width="1000px">
-    <h4>쉽게 하기 위해 휴대폰의 "연락처" 앱으로 비유해보겠습니다. 비유하자면 아래와 같습니다.</h4>
-<img src="https://ifh.cc/g/RxDdls.png" border="0" width="1000px">
-    <hr>
-    <h4>이제 현재 상황을 말씀드리자면, 우리 동아리는 "도메인등록업체" 로 vercel 이라는 무료 서비스를 사용할 예정입니다.</h4>
-    <h4>vercel 은 깃허브와 연동되기 떄문에 깃허브에서 html 파일을 작성하고서 vercel 에 코드를 보내면 자동으로 도메인을 제작해줍니다.</h4>
-    <h6>현재 준비된 내용이 끝났습니다. 추가될 예정입니다!</h6>
-  </div><!--hard_end-->
+          </div>
+        </div><!--baseend-->
+        <div style="height:20px"></div>
+        <div id="html_learn" class="basicbox" style="width: 90%;">
+          <h1>html 이란?</h1>
+          <h5>HTML 은 웹사이트의 기본 뼈대가 되는 언어입니다. HTML 을 이용하여 텍스트, 버튼, 이미지 등등 여러가지 "요소" 를 생성할 수 있습니다.</h5>
+          <h2 style="margin-top: 10px;">html 기본 베이스</h2>
+          <h5>HTML 의 요소는 태그를 이용하여 생성합니다.</h5>
+          <h5>HTML 의 태그는 &lt; 태그종류(예: 이미지태그) &gt; &lt; /태그이름&gt; 과 같은 식으로 써야합니다.</h5>
+          <h5>태그는 프로그래머가 기입한 태그 순서대로 위에서 아래, 왼쪽에서 오른쪽 방향으로 생성됩니다.</h5>
+          <h5>이들은 실행을 위해 일정한 규칙대로 작성되어야합니다. 양식은 아래와 같습니다.</h5>
+          <div id="code" class="basicbox" style="background-color:#120629; color: white;">
+            <div style="height:5px; width : 100%;"></div>
+            <pre class="code_syntax"
+              style="color:#000000;background-color:#120629;"><span class="line_wrapper"><span style="color:#4B59D8; ">&lt;!DOCTYPE html&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">html</span><span style="color:#274796; "> </span><span style="color:#4B59D8; ">lang</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"en"</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">head</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">meta</span><span style="color:#274796; "> </span><span style="color:#4B59D8; ">charset</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"UTF-8"</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">meta</span><span style="color:#274796; "> </span><span style="color:#4B59D8; ">name</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"viewport"</span><span style="color:#274796; "></span></span>
+            <span class="line_wrapper"><span style="color:#4B59D8; ">content</span><span style="color:#808030; ">=</span><span style="color:#0000e6; ">"width=device-width, initial-scale=1.0"</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">title</span><span style="color:#DF9546; ">&gt;</span><span style="color:white;">문서 제목</span><span style="color:#DF9546; ">&lt;/</span><span style="color:#DA4F4F; font-weight:bold; ">title</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;/</span><span style="color:#DA4F4F; font-weight:bold; ">head</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;</span><span style="color:#DA4F4F; font-weight:bold; ">body</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:white; ">&lt;!-- 내용을 이곳에 추가합니다 --&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;/</span><span style="color:#DA4F4F; font-weight:bold; ">body</span><span style="color:#DF9546; ">&gt;</span></span>
+            <span class="line_wrapper"><span style="color:#DF9546; ">&lt;/</span><span style="color:#DA4F4F; font-weight:bold; ">html</span><span style="color:#DF9546; ">&gt;</span></span></pre>
+          </div><!---->
+          <h5>매우 복잡해보일 수 있지만 자세히 보면 간단합니다. 이제 자세히 알아보겠습니다.</h5>
+          <hr>
+          <h2>&lt;!DOCTYPE html&gt; </h2>
+          <h5>컴퓨터에게 아래부터는 html 언어를 사용하겠다고 알려주는 태그 입니다!</h5>
+          <hr>
+          <h2> &lt;html&gt; &lt;/html&gt;</h2>
+          <h5>&lt;html&gt; 와 &lt;/html&gt; 사이에 html 코드를 작성해야합니다.</h5>
+          <hr>
+          <h2> &lt;head&gt; &lt;/head&gt;</h2>
+          <h5>&lt;head&gt; 와 &lt;/head&gt; 사이에는 사이트의 파비콘과 제목이 표시되는 부분을 꾸미는 태그를 넣습니다.</h5>
+          <img src="https://ifh.cc/g/9FHVWr.png" border="0">
+          <h5>▲ 이 부분을 꾸민다는 뜻입니다.</h5>
+          <h5>꾸미는 코드의 예시 태그로는 &lt;title&gt; &lt;/title&gt; 이 있습니다. 두 요소 사이에 들어가는 글자를 사이트 제목으로 삼습니다.</h5>
+          <h5>예를 들어 이 사이트는 &lt;title&gt;웹개발부 개념설명과 해보기 &lt;/title&gt; 라고 작성되어 있습니다.</h5>
+          <hr>
+          <h4> &lt;meta charset="UTF-8"&gt;
+            <div style="height:5px; width : 100%;"></div>
+            &lt;meta name="viewport"
+          </h4>
+          <h5>웹사이트가 잘 돌아가도록 해주는 기본 설정 태그인데, 이건 회장도 안외웁니다. 이딴거 외우지 마세요. head 사이에 들어가 있는 구조입니다.</h5>
+          <img src="https://ifh.cc/g/NYzHxk.png" border="0">
+          <h5>▲ (이해를 돕기 위해) 이 사이트의 head 는 이렇게 구성되어있습니다. </h5>
+          <hr>
+          <div style="height:30px"></div>
+          <hr>
+          <h2>&lt;body&gt; &lt;/body&gt;</h2>
+          <img src="https://ifh.cc/g/AnOVTJ.png" style="border:2px solid #272727;" width="1000px">
+          <h5>위 이미지처럼 실제 사용자가 사용하는, 그러니까 개발자가 사용자에게 기능을 제공하는 부분을 꾸미는 태그가 들어가는 태그입니다.</h5>
+          <h5>이제 body 에서 유용하게 사용할 수 있는 태그를 알아보겠습니다!</h5>
+          <h2 style="margin-top:20px;">&lt;h&gt; &lt;/h&gt; 태그</h2>
+          <h5>지금 이 글을 쓸때도 h 태그를 사용했어요. </h5>
+          <h5> 태그는 &lt;h&gt; 글자 내용 &lt;/h&gt; 의 모양꼴로 사용합니다. h뒤에는 숫자를 붙여야 하는데, 숫자의 크기가 커질수록 글자의 크기가 작아저요! 최대 h6 까지 가능해요.
+          </h5>
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <h1>h1 을 적용한 예시에요!</h1>
+          <h2>h2 을 적용한 예시에요!</h2>
+          <h3>h3 을 적용한 예시에요!</h3>
+          <h4>h4 을 적용한 예시에요!</h4>
+          <h5>h5 을 적용한 예시에요!</h5>
+          <h6>h6 을 적용한 예시에요!</h6>
+          <img src="https://ifh.cc/g/CN6XS7.png" border="0" width="500px">
 
+          <h2 style="margin-top:20px;">&lt;a&gt; &lt;/a&gt; 태그</h2>
+          <h5> a태그는 클릭하면 대상 링크로 접속시켜주는 버튼을 만드는 태그에요! </h5>
+          <h5>&lt;a href="원하는 사이트 링크" &gt; 표시될 이름 &lt;/a&gt; 에서 href="" 속에 원하는 사이트의 링크를 넣고, a태그 사이에 버튼의 표시될 이름을 쓰면 됩니다.
+          </h5>
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <a href="https://www.google.com" style="margin: 10px; ">google.com</a>
+          <div style="height:5px"></div>
+          <img src="https://ifh.cc/g/MwwPNB.png" border="0">
+          <h2 style="margin-top:20px;">&lt;img &gt; 태그</h2>
+          <h5>이미지를 원하는 크기만큼 표시하는 태그에요!</h5>
+          <h5> &lt;img src = "이미지파일이름.png" width = "원하는 가로 크기px" height = "원하는 세로 크기px" &gt;가 기본 양식입니다.!</h5>
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <img src="https://ifh.cc/g/MwwPNB.png" width="500px" height="auto">
+          <h5>위 이미지 자체가 예시</h5>
+          <h2 style="margin-top:20px;">&lt;hr &gt; 태그</h2>
+          <h5>그냥 선을 그려주는 태그입니다.</h5>
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <hr>
+          <h4>자, 이제 필수적인 태그를 모두 배웠습니다. 혹시나 모르니 아래와 같이 예시 코드를 보여드리겠습니다!</h4>
+          <img src="https://ifh.cc/g/x7GbO3.png" border="0" width="1000px">
+          <h5>이런 코드를 입력하면?</h5>
+          <img src="https://ifh.cc/g/1S3BBp.png" border="0" width="1000px">
+          <h5>이런 사이트를 만들 수 있습니다.</h5>
+          <div style="height:10px;"></div>
+          <h3>기본적인 태그를 모두 배웠지만 솔직히 디자인을 예쁘게 할 수 없습니다. 디자인 방법을 배우려면 CSS 를 배우셔야 합니다!</h3>
+          <h3>홈화면으로 돌아가면 "css 기본 문법 배우기" 버튼이 있습니다. 클릭하면 설명을 볼 수 있어요!</h3>
+          <div style="height:50px;"></div>
+        </div><!--htmlend-->
+        <div style="height:20px"></div>
+        <div id="js_learn" class="basicbox" style="width: 90%;">
+          <h1>JavaScript 란?</h1>
+          <p>JavaScript (js) 는 웹페이지를 동적으로 만들거나 요소를 생성, 관리, 삭제, 수정 할 수 있는 프로그래밍 언어입니다.</p>
+          <p>JS 는 html 에서 &lt;script&gpt; 와 &lt;/script&gt; 사이에 작성됩니다.</p>
+           <h2>출력</h2>
+          <p>브라우저의 개발자 도구에는 주로 콘솔창이라고 불리는 도구가 있습니다. 여기에는 JavaScript 코드의 결과나 <code>console.log()</code>에서 출력한 메시지 등이 표시됩니다.</p>
+          <p><code>console.log()</code> 는 () 속의 값을 출력합니다.</p>
+          <!-- 변수 -->
+        
+          <h2>변수</h2>
+          <p>일반적으로 변수는 숫자나 글자, 또는 정보를 저장하고 참조할 수 있는 공간입니다. </p><p>변수는 각각의 이름을 가지고 있으며, 이후 이름을 통해 다시 참조할 수 있습니다.</p>
+          <p>( "//내용" 을 통하여 주석(메모) 를 작성 가능</p>
+          <pre><div class="codespace">
+              // 변수 선언
+              let 변수1;
+              // 변수에 값 할당
+              변수1 = 5;
+              // 변수 초기화 (변수선언을 할때 한방에 이렇게 해도 됨)
+              let 변수2 = 10;
+              // 변수 참조
+              console.log(변수1 + 변수2); // 15 출력
+              //일반적으로 변수 이름은 영어와 언더바를 혼합해서 사용.
+              //텍스트 코딩을 할때에는 숫자값과 글자값을 정확히 구분해야합니다.
+              //코드속에서 연산이 되는 숫자 / 숫자값을 가지고 있는 변수 는 "" 를 사용하면 안됩니다. 반대로 연산이 불가능한 글자값 / 글자값을 가지고 있는 변수는 "" 를 
+          </div></pre>
 
-  <div id="learnhtml" style="display: none;" class="learnbox">
-    <h1>html 이란?</h1>
-    <h5>모든 웹사이트는 html 라는 프로그래밍 언어를 베이스로 제작됩니다. 웹사이트를 인간으로 비유하면 html 는 뼈에 해당하죠. 물론 이 웹사이트도 html 를 사용했어요</h5>
-    <h2 style="margin-top: 10px;">html 기본 베이스</h2>
-    <h5>html 은 "요소" 라는 것을 위에서 아래 방향으로 순서대로 끼우듯 작성하는 언어입니다. 요소는 예를 들면 "이미지파일","글자(지금 이 글도 포함)","버튼" 과 같은 것들 입니다.</h5>
-    <h5>html 의 요소를 선언하기 위해서는 &lt; 태그이름 &gt; &lt; /태그이름&gt; 과 같은 식으로 써야합니다.</h5>
-    <h5>이들은 실행을 위해 일정한 규칙대로 작성되어야합니다. 양식은 아래와 같습니다.</h5>
-    <div id="code" class="basicbox" style="background-color: #0B0D20; color: white;">&lt;!DOCTYPE html&gt;
-    <div style="height:5px; width : 100%;"></div>
-    &lt;html lang="en"&gt;
-      <div style="height:5px; width : 100%;"></div>
-    &lt;head&gt;
-      <div style="height:5px; width : 100%;"></div>
-        &lt;meta charset="UTF-8"&gt;
-      <div style="height:5px; width : 100%;"></div>
-        &lt;meta name="viewport" 
-      <div style="height:5px; width : 100%;"></div>
-      content="width=device-width, initial-scale=1.0"&gt;
-      <div style="height:5px; width : 100%;"></div>
-        &lt;title&gt;문서 제목&lt;/title&gt;
-      <div style="height:5px; width : 100%;"></div>
-    &lt;/head&gt;
-      <div style="height:5px; width : 100%;"></div>
-    &lt;body&gt;
-      <div style="height:5px; width : 100%;"></div>
-        &lt;!-- 내용을 이곳에 추가합니다 --&gt;
-      <div style="height:5px; width : 100%;"></div>
-    &lt;/body&gt;
-      <div style="height:5px; width : 100%;"></div>
-    &lt;/html&gt;
-    </div>
-    <h5>매우 복잡해보일 수 있지만 자세히 보면 간단합니다. 이제 자세히 알아보겠습니다.</h5>
-    <hr><h2>&lt;!DOCTYPE html&gt; </h2>
-    <h5>컴퓨터에게 아래부터는 html 언어를 사용하겠다고 알려주는 태그 입니다!</h5>
-    <hr><h2> &lt;html&gt; &lt;/html&gt;</h2>
-    <h5>&lt;html&gt; 와 &lt;/html&gt; 사이에 html 코드를 작성해야합니다.</h5>
-    <hr><h2> &lt;head&gt; &lt;/head&gt;</h2>
-    <h5>&lt;head&gt; 와 &lt;/head&gt; 사이에는 사이트의 파비콘과 제목이 표시되는 부분을 꾸미는 태그를 넣습니다.</h5>
-    <img src="https://ifh.cc/g/9FHVWr.png" border="0">
-    <h5>▲ 이 부분을 꾸민다는 뜻입니다.</h5>
-    <h5>꾸미는 코드의 예시 태그로는 &lt;title&gt; &lt;/title&gt; 이 있습니다. 두 요소 사이에 들어가는 글자를 사이트 제목으로 삼습니다.</h5>
-    <h5>예를 들어 이 사이트는   &lt;title&gt;웹개발부 개념설명과 해보기 &lt;/title&gt; 라고 작성되어 있습니다.</h5>
-    <hr><h4> &lt;meta charset="UTF-8"&gt;
-    <div style="height:5px; width : 100%;"></div>
-      &lt;meta name="viewport" </h4>
-    <h5>웹사이트가 잘 돌아가도록 해주는 기본 설정 태그인데, 이건 회장도 안외웁니다. 이딴거 외우지 마세요. head 사이에 들어가 있는 구조입니다.</h5>
-    <img src="https://ifh.cc/g/NYzHxk.png" border="0">
-    <h5>▲ (이해를 돕기 위해) 이 사이트의 head 는 이렇게 구성되어있습니다. </h5>
-    <hr>
-    <div style="height:30px"></div>
-    <hr><h2>&lt;body&gt; &lt;/body&gt;</h2>
-    <img src="https://ifh.cc/g/AnOVTJ.png" style="border:2px solid #272727;" width="1000px">
-    <h5>위 이미지처럼 실제 사용자가 사용하는, 그러니까 개발자가 사용자에게 기능을 제공하는 부분을 꾸미는 태그가 들어가는 태그입니다.</h5>
-    <h5>이제 body 에서 유용하게 사용할 수 있는 태그를 알아보겠습니다!</h5>
-    <h2 style="margin-top:20px;">&lt;h&gt; &lt;/h&gt; 태그</h2>
-    <h5>지금 이 글을 쓸때도 h 태그를 사용했어요. </h5> <h5> 태그는 &lt;h&gt; 글자 내용 &lt;/h&gt; 의 모양꼴로 사용합니다. h뒤에는 숫자를 붙여야 하는데, 숫자의 크기가 커질수록 글자의 크기가 작아저요! 최대 h6 까지 가능해요. </h5>
-    <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-    <h1>h1 을 적용한 예시에요!</h1>
-    <h2>h2 을 적용한 예시에요!</h2>
-    <h3>h3 을 적용한 예시에요!</h3>
-    <h4>h4 을 적용한 예시에요!</h4>
-    <h5>h5 을 적용한 예시에요!</h5>
-    <h6>h6 을 적용한 예시에요!</h6>
-    <img src="https://ifh.cc/g/CN6XS7.png" border="0" width="500px">
+          <!-- 조건문 -->
+          <h2>조건문</h2>
+          <p>조건문은 주어진 조건에 따라 코드의 실행을 제어합니다.</p>
+          <pre><div class="codespace">
+              let age = 20;
+              if (age >= 18) {
+                  console.log("성인입니다.");
+              } else {
+                  console.log("미성년자입니다.");
+              }
+          </div></pre>
 
-    <h2 style="margin-top:20px;">&lt;a&gt; &lt;/a&gt; 태그</h2>
-    <h5> a태그는 클릭하면 대상 링크로 접속시켜주는 버튼을 만드는 태그에요! </h5><h5>&lt;a href="원하는 사이트 링크" &gt; 표시될 이름 &lt;/a&gt; 에서 href="" 속에 원하는 사이트의 링크를 넣고, a태그 사이에 버튼의 표시될 이름을 쓰면 됩니다.</h5>
-    <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-    <a href="https://www.google.com" style="margin: 10px; ">google.com</a>
-    <div style="height:5px"></div>
-    <img src="https://ifh.cc/g/MwwPNB.png" border="0">
-    <h2 style="margin-top:20px;">&lt;img &gt; 태그</h2>
-    <h5>이미지를 원하는 크기만큼 표시하는 태그에요!</h5><h5> &lt;img src = "이미지파일이름.png" width = "원하는 가로 크기px" height = "원하는 세로 크기px" &gt;가 기본 양식입니다.!</h5>
-    <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-     <img src="https://ifh.cc/g/MwwPNB.png" width="500px" height="auto">
-    <h5>위 이미지 자체가 예시</h5>
-    <h2 style="margin-top:20px;">&lt;hr &gt; 태그</h2>
-    <h5>그냥 선을 그려주는 태그입니다.</h5>
-     <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-    <hr>
-    <h4>자, 이제 필수적인 태그를 모두 배웠습니다. 혹시나 모르니 아래와 같이 예시 코드를 보여드리겠습니다!</h4>
-    <img src="https://ifh.cc/g/x7GbO3.png" border="0" width="1000px">
-    <h5>이런 코드를 입력하면?</h5>
-    <img src="https://ifh.cc/g/1S3BBp.png" border="0" width="1000px">
-    <h5>이런 사이트를 만들 수 있습니다.</h5>
-    <div style="height:10px;"></div>
-    <h3>기본적인 태그를 모두 배웠지만 솔직히 디자인을 예쁘게 할 수 없습니다. 디자인 방법을 배우려면 CSS 를 배우셔야 합니다!</h3>
-    <h3>홈화면으로 돌아가면 "css 기본 문법 배우기" 버튼이 있습니다. 클릭하면 설명을 볼 수 있어요!</h3>
-    <div style="height:50px;"></div>
-  </div><!--learnhtml_end-->
+          <!-- 반복문 -->
+          <h2>반복문</h2>
+          <p>반복문은 주어진 조건에 따라 코드 블록을 반복해서 실행합니다.</p>
+          <pre><div class="codespace">
+              for (let i = 0; i < 5; i++) {
+                  console.log("반복문 실행 중:", i);
+              }
+          </div></pre>
 
+          <!-- 함수 -->
+          <h2>함수</h2>
+          <p>함수는 코드를 그룹화하고 재사용 가능한 코드 블록을 생성합니다.</p>
+          <pre><div class="codespace">
+              function greet(name) {
+                  console.log("안녕하세요, " + name + "님!");
+              }
+              greet("철수");
+              greet("영희");
+          </div></pre>
 
-  <div id="learnjs" style="display: none;" class="learnbox"> 
-    <h2 style="color:gray;">이런! 문제가 발생했어요! </h2>
-    <h3 style="color:darkgray">아직 진도가 아닌것 같아요!</h3>
-  </div><!--learnjs_end-->
+          <!-- 객체 -->
+          <h2>객체</h2>
+          <p>객체는 관련된 변수와 함수를 그룹화하여 사용합니다.</p>
+          <pre><div class="codespace">
+              let person = {
+                  name: "철수",
+                  age: 25,
+                  greet: function() {
+                      console.log("안녕하세요, 저는 " + this.name + "입니다.");
+                  }
+              };
+              console.log(person.name); // "철수"
+              person.greet(); // "안녕하세요, 저는 철수입니다."
+          </div></pre>
 
+          <!-- 배열 -->
+          <h2>배열(리스트)</h2>
+          <p>배열은 여러 값을 하나의 변수에 저장하는 데 사용됩니다.</p>
+          <pre><div class="codespace">
+              //배열 선언 또는 수정
+              let fruits = ["사과", "바나나", "딸기"];
+              //배열 접근
+              console.log(fruits[0]); // "사과" - fruit[0] 는 fruits의 첫번째 값을 의미합니다. 배열에서 [] 속에는 "원하는 값의 인덱스 - 1" 의 값를 넣어야 합니다.
+              console.log(fruits.length); // 3
+          </div></pre>
+          <hr>
+          <p>여기까지 똑바로 읽으셨다면 이러한 의문이 생기실 수 있습니다.</p>
+          <h4>그래서 이거랑 html 요소를 접근하는거랑 뭔 관련이 있는거지?</h4>
+          <p>그러므로 저는 이제 js 를 통해 html 을 조절하는 방법을 알려드리겠습니다!</p>
+          <hr>
+          <h2>html 접근 js 문법 - (1) 기본 접근 방식</h2>
+          <h5>우선 아래 코드를 봅시다.</h5>
+          <div class="codespace"><pre>
+            document.querySelector("body").style.backgroundColor = "red";
+            //html 페이지에서 body 의 style 속성중 backgroundColor (background-color) 을 빨강으로 바꾸는 코드입니다.</pre>
+          </div>
+          <p>위의 코드를 안다면 html 의 왠만한 접근(요소 수정)은 가능합니다.</p>
+          <p>위 코드를 한국어 문장으로 억지로 해석하자면,</p>
+          <div class="codespace">
+            html 페이지에서 body 라는 이름의 태그의 style 속성중 배경색 (background-color) 을 빨강으로 바꾸겠습니다.
+          </div>
+          <p>또는 쉽게 바꾸자면</p>
+          <div class="codespace">
+            <pre>
+              html에서.이름이(ID 또는 CLSS)인 요소의.스타일에서.배경색 = 빨강; 
+            </pre>
+          </div>
+          <p>로 볼 수 있습니다.</p>
+          <h4>그럼 한번 위의 코드를 구체적으로 뜰어봅시다.</h4>
+          
+          <h3>document</h3>
+          <p>JavaScript에서 document는 현재 웹 페이지를 나타내는 객체입니다. 이 객체를 통해 웹 페이지의 구조를 조작하고 내용을 변경할 수 있습니다. </p>
+          <h3>querySelector(대상)</h3>
+          <p>CSS 선택자를 사용하여 문서에서 요소를 선택하는 데 사용됩니다. 다른말로 () 에 대상 html 요소의 id 또는 class 를 작성하여 document 에서 어떤 요소를 접근할지 알리는 코드입니다.</p>
+          <h3>이후</h3>
+          <p>이후 부분에는 style / value 등등 대상 요소의 정보를 수정/생성/삭제 할 수 있습니다.</p><hr>
+          <p>오늘은 js 의 기본 문법과 html 의 접근을 알아봤습니다. 다음차시에는 input 을 이용한 사용자의 input 내용과 실제 행위에 대해 배우겠습니다.</p>
+        </div><!--jsend-->
 
-  <div id="learncss" style="display: none;" class="learnbox">
-    <h5>이제 HTML 의 디자인을 보완할 수 있는 언어 css 를 배워보겠습니다.</h5>
-    <h1>CSS 는 무엇인가요?</h1>
-    <h6>(Cascading Style Sheets 의 약자)</h6>
-    <h5>css 를 쉽게 정의 하자면, html 로 작성된 홈페이지의 디자인을 개선하기 위하여 작성하는 코드의 종류 입니다.</h5>
-    <h5>css를 사용하여 다양한 디자인의 변화를 줄 수 있습니다.</h5>
-    <h4 style="color:#FFCD12; display:inline;">글꼴 색상과 종류</h4>
-    <h4 style="color:#ED4C00; display:inline;"> 요소들의 배치 스타일</h4><h4 style="color:#BCE55C; display:inline;"> 요소들의 배치 스타일</h4>
-    <h5>구체적으로 알아보겠습니다!</h5>
-    <hr>
-    <h1>코드 작성 방식</h1>
-    <h5>css 는 실제 프로그래밍 언어라고 하기보다는 html 라는 마크업언어에 선택적으로 디자인적 부분을 수정하는 코드 입니다.</h5>
-    <h5>html 요소(태그를 사용해서 만든 오브젝트, 예시로 img 요소나 h 요소)를 선택하고, 디자인을 수정할 수 있습니다.</h5>
-    <h5>CSS 를 html 도중에 사용하는 방식 첫번째를 알아보겠습니다. 아래는 html 에서 사용되는 h 태그의 글자색을 빨강색으로 바꿔주는 코드입니다.</h5>
-    <div id="code" class="basicbox" style="background-color: #0B0D20; color: white;">
-      <div style="">
-        &lt;style&gt;
-      </div>
-      <div style="color:#FFBB00; display:inline;">h</div><div style="display:inline;">
-      {
-     <div style="color:#D9E5FF;">
-          color : red;
-    </div>
-    <div style="">
+        <div style="height:20px"></div>
+        <div id="css_learn" class="basicbox" style="width: 90%;">
+          <h5>이제 HTML 의 디자인을 보완할 수 있는 언어 css 를 배워보겠습니다.</h5>
+          <h1>CSS 는 무엇인가요?</h1>
+          <h6>(Cascading Style Sheets 의 약자)</h6>
+          <h5>css 를 쉽게 정의 하자면, html 로 작성된 홈페이지의 디자인을 개선하기 위하여 작성하는 코드의 종류 입니다.</h5>
+          <h5>css를 사용하여 다양한 디자인의 변화를 줄 수 있습니다.</h5>
+          <h4 style="color:#FFCD12; display:inline;">글꼴 색상과 종류</h4>
+          <h4 style="color:#ED4C00; display:inline;"> 요소들의 배치 스타일</h4>
+          <h4 style="color:#BCE55C; display:inline;"> 요소들의 배치 스타일</h4>
+          <h5>구체적으로 알아보겠습니다!</h5>
+          <hr>
+          <h1>코드 작성 방식</h1>
+          <h5>css 는 실제 프로그래밍 언어라고 하기보다는 html 라는 마크업언어에 선택적으로 디자인적 부분을 수정하는 코드 입니다.</h5>
+          <h5>html 요소(태그를 사용해서 만든 오브젝트, 예시로 img 요소나 h 요소)를 선택하고, 디자인을 수정할 수 있습니다.</h5>
+          <h5>CSS 를 html 도중에 사용하는 방식 첫번째를 알아보겠습니다. 아래는 html 에서 사용되는 h 태그의 글자색을 빨강색으로 바꿔주는 코드입니다.</h5>
+          <div id="code" class="basicbox" style="background-color: #0B0D20; color: white;">
+            <div style="">
+              &lt;style&gt;
+            </div>
+            <div style="color:#FFBB00; display:inline;">h</div>
+            <div style="display:inline;">
+              {
+              <div style="color:#D9E5FF;">
+                color : red;
+              </div>
+              <div style="">
+                }
+              </div>
+              <div style="">
+                &lt;/style&gt;
+              </div>
+            </div>
+          </div>
+          <h5 style="margin-bottom:10px;">한번 자세히 살펴보겠습니다.</h5>
+          <h3>&lt;style&gt; &lt;/style&gt;</h3>
+          <h5>html 문서 도중에 CSS 를 사용하기 위해 사용하는 태그 입니다. 위에 제시된 코드와 같이 두 태그 사이에 css 코드를 작성합니다.</h5>
+          <h5>이러한 방식으로 css 를 작성하면, 따로 css 적용 대상을 지정해줘야 합니다.</h5>
+          <div style="height:10px;"></div>
+          <h5>지정 대상은 간단합니다.</h5>
+          <h5>"대상 태그 이름 {변경할 사항} " 처럼 작성합니다.</h5>
+          <h5>위 코드에서도 h(대상 태그 이름) {color:red; (변경할 사항)} 처럼 적용된 것 입니다.</h5>
+          <h5>"대상 태그 이름" (정식 용어로는 Selector) 에 태그 이름(예시 : h, a, img, div, hr) 를 입력하면 html 에 있는 모든 대상 태그에 {} 속 css 가
+            적용됩니다. 예를 들어 위의 코드는 문서의 모든 h 태그들의 글씨색을 붉게 만듭니다.</h5>
+          <h5>하지만 적용을 원하는 요소만 적용시키고 싶을 경우 아래와 같이 할 수 있습니다.</h5>
+          <img src="https://ifh.cc/g/zjqpL6.png" border="0" width="1000px">
+          <hr>
+          <h5>css 를 html 에서 사용하는 두번쨰 방법을 알아보겠습니다. 아래 코드는 "div" 라는 html 의 태그 (다목적 상자(직사각형). div 와 /div 사이에 여러 태그를 끼워 넣을 수
+            있음. 그렇게 하면 파일처럼 묶어 사용할 수 있음) 의 크기를 아랫변길이 100픽셀, 높이 10픽셀 로 만든 후에 배경을 빨간색으로 채워 넣은 예시입니다. </h5>
+          <div id="code" class="basicbox" style="background-color: #0B0D20; color: white;">
+            <div style="">
+              &lt;div style = "background-color :red; width : 100px; height : 10px;"&gt;
+            </div>
+            <div style="">
+              &lt;/div&gt;
+            </div>
+          </div>
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <div style="background-color:red;width:100px;height:10px; margin: 10px"></div>
+          <h5>위와 같이 꾸미고 싶은 태그 속에 style="꾸밀 내용(css)" 처럼 css 를 사용할 수 있습니다. </h5>
+          <hr>
+          <h5>css 를 html 에 사용하는 방식을 알아봤다면 이제는 css 자체의 문법을 알아보겠습니다.</h5>
+          <img src="https://ifh.cc/g/5ShVps.jpg" border="0" width="1000px">
+          <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
+          <h5>아래는 실제로 div 태그에 {color : red; width : 100px; height:100px; background-color : #272727; font-family :
+            궁서체;margin:10px; border: 2px solid yellow;} 를 적용하고 속에 h태그로 "안녕" 이라고 작성한 예시입니다.}</h5>
+          <div
+            style="color : red; width : 100px; height:100px; background-color : #272727; font-family : 궁서체;margin:10px; border: 2px solid yellow;">
+            안녕</div>
+
+        </div><!--cssend-->
+
+        <div style="height:20px"></div>
+
+        <div id="advanced_learn" class="basicbox" style="width: 90%;">
+          <h4>사이트의 존재 방식과 DNS 시스템에 대해 기본적인 이론을 알려드리겠습니다.</h4>
+          <img src="https://ifh.cc/g/53Rfwc.png" border="0" width="900px">
+          <h4>우선 이 용어들에 익숙해지셔야 합니다.</h4>
+          <h4>그래서 DNS 시스템과 웹사이트의 형태를 시각화 하면 아래의 그림과 같습니다.</h4>
+          <img src="https://ifh.cc/g/oazmg6.png" border="0" width="900px">
+          <h4>쉽게 하기 위해 휴대폰의 "연락처" 앱으로 비유해보겠습니다. 비유하자면 아래와 같습니다.</h4>
+          <img src="https://ifh.cc/g/RxDdls.png" border="0" width="900px">
+          <hr>
+          <h4>이제 현재 상황을 말씀드리자면, 우리 동아리는 "도메인등록업체" 로 vercel 이라는 무료 서비스를 사용할 예정입니다.</h4>
+          <h4>vercel 은 깃허브와 연동되기 떄문에 깃허브에서 html 파일을 작성하고서 vercel 에 코드를 보내면 자동으로 도메인을 제작해줍니다.</h4>
+          <h6>현재 준비된 내용이 끝났습니다. 추가될 예정입니다!</h6>
+
+        </div><!--adend-->
+        <div style="height:20px"></div>
+      </center>
+    </div><!--bodyer_end-->
+
+  </div><!--main_body_end-->
+  <script>
+      //close("all");
+  </script>
+  <script>
+    function get(el) {
+      return document.querySelector(el);
+    }
+
+    function close(type) {
+      if (type == "all") {
+        document.querySelector("#html_learn").style.display = "none";
+        document.querySelector("#css_learn").style.display = "none";
+        document.querySelector("#js_learn").style.display = "none";
+        document.querySelector("#main_learn").style.display = "none";
+        document.querySelector("#advanced_learn").style.display = "none";
+        document.querySelector("#base_learn").style.display = "none";
+      } else {
+        document.querySelector("#" + type + "_learn").style.display = "none";
       }
-    </div>
-    <div style="">
-      &lt;/style&gt;
-    </div>
-  </div>
-  </div>
-    <h5 style="margin-bottom:10px;">한번 자세히 살펴보겠습니다.</h5>
-    <h3>&lt;style&gt; &lt;/style&gt;</h3>
-    <h5>html 문서 도중에 CSS 를 사용하기 위해 사용하는 태그 입니다. 위에 제시된 코드와 같이 두 태그 사이에 css 코드를 작성합니다.</h5>
-    <h5>이러한 방식으로 css 를 작성하면, 따로 css 적용 대상을 지정해줘야 합니다.</h5>
-    <div style="height:10px;"></div>
-    <h5>지정 대상은 간단합니다.</h5>
-    <h5>"대상 태그 이름 {변경할 사항} " 처럼 작성합니다.</h5>
-    <h5>위 코드에서도 h(대상 태그 이름) {color:red; (변경할 사항)}  처럼 적용된 것 입니다.</h5>
-    <h5>"대상 태그 이름" (정식 용어로는 Selector) 에 태그 이름(예시 : h, a, img, div, hr) 를 입력하면 html 에 있는 모든 대상 태그에 {} 속 css 가 적용됩니다. 예를 들어 위의 코드는 문서의 모든 h 태그들의 글씨색을 붉게 만듭니다.</h5>
-    <h5>하지만 적용을 원하는 요소만 적용시키고 싶을 경우 아래와 같이 할 수 있습니다.</h5>
-    <img src="https://ifh.cc/g/zjqpL6.png" border="0" width="1000px">
-    <hr>
-    <h5>css 를 html 에서 사용하는 두번쨰 방법을 알아보겠습니다. 아래 코드는 "div" 라는 html 의 태그 (다목적 상자(직사각형). div 와 /div 사이에 여러 태그를 끼워 넣을 수 있음. 그렇게 하면 파일처럼 묶어 사용할 수 있음) 의 크기를 아랫변길이 100픽셀, 높이 10픽셀 로 만든 후에 배경을 빨간색으로 채워 넣은 예시입니다. </h5>
-    <div id="code" class="basicbox" style="background-color: #0B0D20; color: white;">
-      <div style="">
-        &lt;div style = "background-color :red; width : 100px; height : 10px;"&gt;
-      </div>
-    <div style="">
-      &lt;/div&gt;
-    </div>
-    </div>
-    <div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-    <div style="background-color:red;width:100px;height:10px; margin: 10px"></div>
-     <h5>위와 같이 꾸미고 싶은 태그 속에 style="꾸밀 내용(css)" 처럼 css 를 사용할 수 있습니다. </h5>
-    <hr>
-    <h5>css 를 html 에 사용하는 방식을 알아봤다면 이제는 css 자체의 문법을 알아보겠습니다.</h5>
-    <img src="https://ifh.cc/g/5ShVps.jpg" border="0" width="1000px">
-		<div style="border-radius: 5px; border: solid #272727; width: 70px; height:20px;">적용예시</div>
-		<h5>아래는 실제로 div 태그에 {color : red; width : 100px; height:100px; background-color : #272727; font-family : 궁서체;margin:10px; border: 2px solid yellow;} 를 적용하고 속에 h태그로 "안녕" 이라고 작성한 예시입니다.}</h5>
-		<div style="color : red; width : 100px; height:100px; background-color : #272727; font-family : 궁서체;margin:10px; border: 2px solid yellow;">안녕</div>
-    </div>
-  
-  <!--learncss_end-->
-    </center>
+    }
 
 
+    function open(type) {
+      console.log("test");
+      if (type == "all") {
+        document.querySelector("#html_learn").style.display = "block";
+        document.querySelector("#css_learn").style.display = "block";
+        document.querySelector("#js_learn").style.display = "block";
+        document.querySelector("#main_learn").style.display = "block";
+        document.querySelector("#advanced_learn").style.display = "block";
+        document.querySelector("#base_learn").style.display = "block";
+      } else {
+        close("all");
+        document.querySelector("#" + type + "_learn").style.display = "block";
+      }
+    }
 
+    function SettingWindowOPCL() {
+      var settingWindow = document.querySelector('#settingwindow');
+      var SettingOPCL = document.querySelector('#settingbutton');
 
+      if (SettingOPCL.textContent === "x") {
+        settingWindow.style.opacity = 0;
+        SettingOPCL.textContent = "⚙";
+      }
+      else {
+        settingWindow.style.opacity = 1;
+        SettingOPCL.textContent = "x";
+      }
+    }
 
+    function changeBackgroundColor() {
+      var backgroundColor = document.querySelector('#backgroundColor').value;
+      document.querySelector('#main_body').style.backgroundColor = backgroundColor;
+    }
 
+    function changeFontColor() {
+      var fontColor = document.querySelector('#fontColor').value;
+      document.querySelector('#main_body').style.color = fontColor;
+    }
+    close("all");
+  </script>
 
-</body><whale-quicksearch translate="no"></whale-quicksearch></html>
+</body>
+
+</html>
