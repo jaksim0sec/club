@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -7,22 +8,21 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="https://i.ibb.co/TbHQb6K/721wx-Lr-Imgur.png">
   <style>
-    a:link {
-      color: white;
-      text-decoration: none;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      color: #333;
     }
 
-    a:visited {
+    a {
       color: white;
       text-decoration: none;
     }
 
     a:hover {
-      text-decoration: none;
-    }
-
-    a:underline {
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     img {
@@ -32,18 +32,27 @@
 
     input[type="button"] {
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-      top: 15px;
-      background-color: white;
-      height: 22px;
-      width: 110px;
-      border: 1px solid #DADADA;
-      border-radius: 5px;
+      background-color: #FDF9F6;
+      color: white;
+      height: 40px;
+      width: 140px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="button"]:hover {
+      background-color: #FF6D48;
+      color: white;
     }
 
     .codespace {
       background-color: #120629;
       border-radius: 10px;
       margin: 10px;
+      padding: 20px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
       color: white;
     }
@@ -54,24 +63,34 @@
       border-radius: 10px;
       margin: 10px;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
     }
 
     .button_head {
-      top: 15px;
-      background-color: white;
-      height: 22px;
-      width: 110px;
-      border: 1px solid #DADADA;
-      border-radius: 8px;
+      background-color: #FDF9F6;
+      color: white;
+      height: 40px;
+      width: 140px;
+      border: none;
+      border-radius: 20px;
       position: fixed;
+      top: 10px;
+      right: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button_head:hover {
+      background-color: #FF6D48;
     }
 
     #timerline {
-      margin: 20px;
+      margin: 20px auto;
       height: 15px;
       border-radius: 20px;
       background-color: black;
-      transition: width 0.5s ease; /* 길이 변화를 부드럽게 만듭니다. */
+      transition: width 0.5s ease;
     }
 
     .label_saet {
@@ -84,7 +103,6 @@
       font-size: 13px;
     }
 
-    /* input[type="color"] 스타일 */
     input[type="color"] {
       width: 30px;
       height: 30px;
@@ -94,54 +112,102 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      color: black;
     }
 
     button {
       width: 80px;
-      height: 22px;
-      border: 1px solid #CCCCCC;
-      border-radius: 10px;
-      background-color: white;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-
-    input[type="color"]::-webkit-color-swatch {
-      border-radius: 30px;
+      height: 40px;
       border: none;
+      border-radius: 20px;
+      background-color: #FDF9F6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    /* .tager 클래스 스타일 */
-    .tager {
-      border: 1px solid #CCCCCC;
-      border-radius: 15px;
+    button:hover {
+      background-color: #45a049;
     }
 
-    /* 스크롤바 스타일 */
-    ::-webkit-scrollbar {
-      width: 12px;
-      height: 12px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      border-radius: 10px;
-      border: 3px solid transparent;
-      box-shadow: inset 6px 6px 0;
-    }
-
-    ::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-
-    .selectbutton
-    {
+    .selectbutton {
       font-size: 100px;
       border-radius: 20px;
       color: white;
       font-weight: bold;
+      display: flex;
       justify-content: center;
       align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .selectbutton:hover {
+      background-color: #3e8e41;
+    }
+
+    #logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #FDF9F6;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 20px 20px;
+    }
+
+    #logo .label_saet {
+      background-color: #eb4034;
+      margin-left: 10px;
+    }
+
+    #inquiz {
+      padding: 20px;
+      text-align: center;
+    }
+
+    #quizinfo {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    #result {
+      display: none;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #result hr {
+      margin: 20px 0;
+    }
+
+    #score {
+      font-size: 40px;
+      font-weight: bold;
+      background: linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4);
+      /*-webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+      justify-content: center;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #resultline {
+      width: 60%;
+      height: 50px;
+      font-size: 33px;
+      background-color: white;
+      border-radius: 20px;
+      border: 3px solid #E6E6E6;
+      margin: 20px auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
   </style>
 </head>
@@ -150,19 +216,18 @@
 
   <center>
     <div id="logo">
-      <div style="font-size: 30px; display: inline;">동아리</div>
+      <div style="font-size: 30px; display: inline; color: black;">동아리</div>
       <div style="margin: 5px; font-size: 30px;border:none; font-weight: bold; display: inline-block;background: linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;">Quiz</div>
       <div style="color:white; background-color:#eb4034;font-size: 12px;" class="label_saet">베타β</div>
     </div>
   </center>
-  <input class="button_head" type="button" onclick="window.location.href = 'https://saetcodingclub.vercel.app';"
-    value="홈으로 돌아가기" style="top:10px; right:25px;">
+  <input class="button_head" type="button" onclick="window.location.href = 'https://saetcodingclub.vercel.app';" value="홈으로 돌아가기" style="top:10px; right:25px; color: black;">
   <div style="height:100%; width:100%; background-color:#D1D4DA;">
     <div id="inquiz">
       <center>
-        <div style="height:50px;"></div>
+        <div style="height:10px;"></div>
         <div id="quizinfo" style="font-size: 30px;">
           퀴즈 내용
         </div>
@@ -174,38 +239,36 @@
       </center>
     </div>
     <center>
-    <div id="result" style="display: none; background-color: white;">
-      <hr>
-      <div style="font-size: 30px;">
-        <div style="height: 20px;"></div>
-        결과
+      <div id="result">
+        <hr>
+        <div>
+          <div style="height: 20px; font-size: 65px;"></div>
+          <div style="font-size: 45px;">결과</div>
+        </div>
+        <div style="font-size: 40px; font-weight: bold;color: white; background: linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4); text-align: center; justify-content: center;" id="score">점</div>
+        <div id="resultline"></div>
       </div>
-      <div id="resultline" style="width: 60%; height:50px; font-size: 30px; background-color: grey; border-radius: 20px;">
-        
-      </div>
-    </div>
-
-      </center>
+    </center>
   </div>
 
 
   <script>
     const quiz = [
-      ["HTML 문서는 항상 &lt;html&gt; 태그로 시작하고 끝나야 한다.", true],
-      ["&lt;p&gt; 태그는 단락(paragraph)을 나타낸다.", true],
-      ["&lt;br&gt; 태그는 줄 바꿈을 생성한다.", true],
-      ["모든 HTML 태그는 닫는 태그가 필요하다.", false],
-      ["&lt;h1&gt; 태그는 가장 큰 크기의 제목을 나타낸다.", true],
-      ["CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 데 사용된다.", true],
-      ["CSS에서 색상은 color 속성으로 설정할 수 있다.", true],
-      ["CSS 파일의 확장자는 .css이다.", true],
-      ["CSS에서 font-size 속성은 글꼴의 크기를 설정한다.", true],
-      ["CSS에서 #myId는 클래스 선택자를 나타낸다.", false],
-      ["JavaScript는 웹 페이지에 동적인 기능을 추가하는 데 사용된다.", true],
-      ["alert() 함수는 팝업 창을 생성하여 메시지를 표시한다.", true],
-      ["JavaScript 변수는 let 또는 var 키워드로 선언할 수 있다.", true],
-      ["JavaScript는 대소문자를 구분하지 않는다.", false],
-      ["document.getElementById()는 HTML 요소를 선택하는 데 사용된다.", true]
+      ["HTML 문서는 항상 &lt;html&gt; 태그로 시작하고 끝나야 한다.", true, 3],
+      ["&lt;p&gt; 태그는 단락(paragraph)을 나타낸다.", true, 5],
+      ["&lt;br&gt; 태그는 줄 바꿈을 생성한다.", true, 5],
+      ["모든 HTML 태그는 닫는 태그가 필요하다.", false, 3],
+      ["&lt;h1&gt; 태그는 가장 큰 크기의 제목을 나타낸다.", true, 3],
+      ["CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 데 사용된다.", true, 3],
+      ["CSS에서 색상은 color 속성으로 설정할 수 있다.", true, 3],
+      ["CSS 파일의 확장자는 .css이다.", true, 5],
+      ["CSS에서 font-size 속성은 글꼴의 크기를 설정한다.", true, 4],
+      ["CSS에서 #myId는 클래스 선택자를 나타낸다.", false, 4],
+      ["JavaScript는 웹 페이지에 동적인 기능을 추가하는 데 사용된다.", true, 3],
+      ["alert() 함수는 팝업 창을 생성하여 메시지를 표시한다.", true, 4],
+      ["JavaScript 변수는 let 또는 var 키워드로 선언할 수 있다.", true, 3],
+      ["JavaScript는 대소문자를 구분하지 않는다.", false, 3],
+      ["document.getElementById()는 HTML 요소를 선택하는 데 사용된다.", true, 3]
     ];
     let truefalse = [];
     let quiz_num = 0;
@@ -239,7 +302,7 @@
       timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
           clearInterval(timerInterval);
-          
+
           timeLeft = 10;
           quiz_num++;
           if (quiz_num < quiz.length) {
@@ -253,9 +316,26 @@
         }
       }, 1000);
     }
+
     function result() {
       document.querySelector("#inquiz").style.display = "none";
       document.querySelector("#result").style.display = "block";
+      let score = 0;
+      for (let i = 0; i < truefalse.length; i++) {
+        if (truefalse[i] == true) {
+          score = score + quiz[i][2];
+        }
+      }
+      document.querySelector("#score").innerHTML = score + "점";
+      if (score > 20) {
+        if (score > 40) {
+
+        } else {
+          document.querySelector("#score").style.background = "linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4)";
+        }
+      } else {
+        document.querySelector("#score").style.background = "linear-gradient(150deg, #D3D3D3, #919191, #6A6A6A, #515151, #919191)";
+      }
 
       var resultDiv = document.querySelector("#resultline");
 
@@ -265,7 +345,7 @@
 
         if (truefalse[i]) {
           newText.textContent += "O";
-          newSpan.style.color = "#68E289";
+          newSpan.style.color = "black";
         } else {
           newText.textContent += "X";
           newSpan.style.color = "#E77265";
@@ -276,10 +356,8 @@
       }
     }
 
-
-
-
     start();
   </script>
 </body>
+
 </html>
