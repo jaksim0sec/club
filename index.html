@@ -22,8 +22,12 @@
     }
 
     input[type="button"]:hover {
-      color:white;
+      color: white;
       background-color: #58FFA9;
+    }
+
+    button:hover {
+      background-color: #D8DAD9;
     }
 
     a:underline {
@@ -39,11 +43,11 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
       background-color: #FDF9F6;
       color: black;
-      height:22px;
+      height: 22px;
       width: 110px;
       border: none;
       border-radius: 20px;
-      
+
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
@@ -105,6 +109,8 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     input[type="color"]::-webkit-color-swatch {
@@ -734,7 +740,7 @@
     }
     close("all");
 
-    let what = ["html 기본 문법 이해","[동아리반일제] css 문법 이해", "JS 기본 문법과 html 접근 이해", "input 을 이용한 사용자 접근", "고급기술, 라이버리 활용", "미정", "미정", "미정"];
+    let what = ["html 기본 문법 이해", "[동아리반일제] css 문법 이해", "JS 기본 문법과 html 접근 이해", "input 을 이용한 사용자 접근", "고급기술, 라이버리 활용", "미정", "미정", "미정"];
     let date = new Date();
     document.querySelector("#what1").textContent = what[date.getMonth() - 4];
     document.querySelector("#what2").textContent = what[date.getMonth() - 3];
