@@ -21,6 +21,11 @@
       text-decoration: none;
     }
 
+    input[type="button"]:hover {
+      color:white;
+      background-color: #58FFA9;
+    }
+
     a:underline {
       text-decoration: none;
     }
@@ -31,13 +36,16 @@
     }
 
     input[type="button"] {
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-      top: 15px;
-      background-color: white;
-      height: 22px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      background-color: #FDF9F6;
+      color: black;
+      height:22px;
       width: 110px;
-      border: 1px solid #DADADA;
-      border-radius: 5px;
+      border: none;
+      border-radius: 20px;
+      
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     .codespace {
@@ -192,7 +200,7 @@
       </div>
     </div><!--setting_end-->
 
-    <button id="quiz" onclick="window.location.href = '/quiz.html';"
+    <button id="quiz" onclick="window.alert('아직 준비중입니다.')"
       style="color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 14px; position:absolute; top: 10px; left: 60px; text-align: center;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894,#FF48D4);border:none; font-weight: bold; color:white;">Quiz</button>
 
 
@@ -240,14 +248,14 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">순서대로 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">동아리의 모든 수업을 순서대로 배울 수 있습니다.</div>
-          <input type="button" id="boxer0" onclick="
+          <button id="boxer0" onclick="
             document.querySelector('#html_learn').style.display = 'block';
             document.querySelector('#css_learn').style.display = 'block';
             document.querySelector('#js_learn').style.display = 'block';
             document.querySelector('#main_learn').style.display = 'block';
             document.querySelector('#advanced_learn').style.display = 'block';
             document.querySelector('#base_learn').style.display = 'block';" value="시작하기"
-            style="width: 100px; margin: 10px;">
+            style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
         <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
@@ -256,13 +264,13 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">서버구동 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다.</div>
-          <input type="button" id="boxer1" onclick="document.querySelector('#html_learn').style.display = 'none';
+          <button id="boxer1" onclick="document.querySelector('#html_learn').style.display = 'none';
             document.querySelector('#css_learn').style.display = 'none';
             document.querySelector('#js_learn').style.display = 'none';
             document.querySelector('#main_learn').style.display = 'none';
             document.querySelector('#advanced_learn').style.display = 'block';
             document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
-            style="width: 100px; margin: 10px;">
+            style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
         <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
@@ -271,13 +279,13 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">HTML 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">HTML 의 기본 문법과 활용을 배웁니다.</div>
-          <input type="button" id="boxer2" onclick="document.querySelector('#html_learn').style.display = 'block';
+          <button id="boxer2" onclick="document.querySelector('#html_learn').style.display = 'block';
             document.querySelector('#css_learn').style.display = 'none';
             document.querySelector('#js_learn').style.display = 'none';
             document.querySelector('#main_learn').style.display = 'none';
             document.querySelector('#advanced_learn').style.display = 'none';
             document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
-            style="width: 100px; margin: 10px;">
+            style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
         <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
@@ -286,13 +294,13 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">CSS 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">CSS 의 기본 문법과 활용을 배웁니다.</div>
-          <input type="button" id="boxer3" onclick="document.querySelector('#html_learn').style.display = 'none';
+          <button id="boxer3" onclick="document.querySelector('#html_learn').style.display = 'none';
             document.querySelector('#css_learn').style.display = 'block';
             document.querySelector('#js_learn').style.display = 'none';
             document.querySelector('#main_learn').style.display = 'none';
             document.querySelector('#advanced_learn').style.display = 'none';
             document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
-            style="width: 100px; margin: 10px;">
+            style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
         <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
@@ -301,13 +309,13 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">JavaScript 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">JavaScript 의 기본 문법과 활용을 배웁니다.</div>
-          <input type="button" id="boxer4" onclick="document.querySelector('#html_learn').style.display = 'none';
+          <button id="boxer4" onclick="document.querySelector('#html_learn').style.display = 'none';
             document.querySelector('#css_learn').style.display = 'none';
             document.querySelector('#js_learn').style.display = 'block';
             document.querySelector('#main_learn').style.display = 'none';
             document.querySelector('#advanced_learn').style.display = 'none';
             document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
-            style="width: 100px; margin: 10px;">
+            style="width: 100px; margin: 10px;">시작하기</button>
         </div>
       </center>
     </div><!--middle_header_end-->
