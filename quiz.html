@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>샛별중학교 코딩동아리 : 홈</title>
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="https://i.ibb.co/TbHQb6K/721wx-Lr-Imgur.png">
+  <link rel="shortcut icon" href="https://ifh.cc/g/V1dY2n.png">
   <style>
     body {
       margin: 0;
@@ -254,20 +254,20 @@
   <script>
     const quiz = [
       ["HTML 문서는 항상 &lt;html&gt; 태그로 시작하고 끝나야 한다.", true, 3],
-      ["&lt;p&gt; 태그는 단락(paragraph)을 나타낸다.", true, 5],
-      ["&lt;br&gt; 태그는 줄 바꿈을 생성한다.", true, 5],
+      ["&lt;div&gt; 태그는 css 로 접근이 불가능한 요소를 생성한다.", true, 5],
+      ["&lt;hr&gt; 태그는 세로선을 생성한다.", true, 5],
       ["모든 HTML 태그는 닫는 태그가 필요하다.", false, 3],
       ["&lt;h1&gt; 태그는 가장 큰 크기의 제목을 나타낸다.", true, 3],
       ["CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 데 사용된다.", true, 3],
       ["CSS에서 색상은 color 속성으로 설정할 수 있다.", true, 3],
-      ["CSS 파일의 확장자는 .css이다.", true, 5],
+      ["&lt;body&gt; 태그에는 css 를 적용시킬 수 없다", true, 4],
       ["CSS에서 font-size 속성은 글꼴의 크기를 설정한다.", true, 4],
       ["CSS에서 #myId는 클래스 선택자를 나타낸다.", false, 4],
       ["JavaScript는 웹 페이지에 동적인 기능을 추가하는 데 사용된다.", true, 3],
       ["alert() 함수는 팝업 창을 생성하여 메시지를 표시한다.", true, 4],
       ["JavaScript 변수는 let 또는 var 키워드로 선언할 수 있다.", true, 3],
       ["JavaScript는 대소문자를 구분하지 않는다.", false, 3],
-      ["document.getElementById()는 HTML 요소를 선택하는 데 사용된다.", true, 3]
+      ["document.querySelector()은 HTML 요소를 선택하는 데 사용된다.", true, 3]
     ];
     let truefalse = [];
     let quiz_num = 0;
@@ -326,7 +326,7 @@
         }
       }
       document.querySelector("#score").innerHTML = score + "점";
-      if (score > 20) {
+      if (score > 30) {
         if (score > 40) {
 
         } else {
