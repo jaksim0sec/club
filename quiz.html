@@ -82,6 +82,7 @@
 
     .button_head:hover {
       background-color: #FF6D48;
+      color: white;
     }
 
     #timerline {
@@ -208,6 +209,13 @@
       justify-content: center;
       text-align: center;
     }
+
+    #starter{
+      background: linear-gradient(150deg, #E77265, #FFBC9C, #FF4848, #FF4894, #FF48D4);
+      width: 100px;
+      height: 30px;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -223,8 +231,18 @@
     </div>
   </center>
   <input class="button_head" type="button" onclick="window.location.href = 'https://saetcodingclub.vercel.app';" value="홈으로 돌아가기" style="top:10px; right:25px; color: black;">
-  <div style="height:100%; width:100%; background-color:#D1D4DA;">
-    <div id="inquiz">
+  <div style=" width:100%; background-color:#F8F8F8;">
+    <div id = "before" style="height: 500px;">
+      <center>
+        <h2>웹개발 기초 퀴즈</h2>
+        <h5>동아리에서 "js" 부분까지 잘 학습하셨다면 30점 이상이 나올 것 입니다!</h5>
+        <h5>시간제한 안에 문제를 옳게 풀어 최고의 점수를 도달하세요!</h5>
+        <input type="button" onclick="start();" value="시작하기" id="starter"></input>
+      </center>
+    </div>
+  </div>
+  <div style="height:100%; width:100%; background-color:#F8F8F8;display: none;"id="inquiz">
+    <div >
       <center>
         <div style="height:10px;"></div>
         <div id="quizinfo" style="font-size: 30px;">
@@ -234,7 +252,9 @@
         <button id="true" style="width: 35%; height:500px; background-color: #68E289; display: inline-block;" class="selectbutton" onclick="check(true);">O</button>
         <div style="display: inline-block; width:2%"></div>
         <button id="false" style="width: 35%; height:500px; background-color: #E77265;display:inline-block;" class="selectbutton" onclick="check(false);">X</button>
-        <div id="timerline" style="width: 80%;"></div>
+        <div style = "width: 80%; justify-content: center;background-color: #C1C0C0;border-radius: 20px;">
+        <div id="timerline" style="width: 100%;"></div>
+        </div>
       </center>
     </div>
     <center>
@@ -254,13 +274,13 @@
   <script>
     const quiz = [
       ["HTML 문서는 항상 &lt;html&gt; 태그로 시작하고 끝나야 한다.", true, 3],
-      ["&lt;div&gt; 태그는 css 로 접근이 불가능한 요소를 생성한다.", true, 5],
+      ["&lt;div&gt; 태그는 css 로 접근이 불가능한 요소를 생성한다.", false, 5],
       ["&lt;hr&gt; 태그는 세로선을 생성한다.", true, 5],
       ["모든 HTML 태그는 닫는 태그가 필요하다.", false, 3],
       ["&lt;h1&gt; 태그는 가장 큰 크기의 제목을 나타낸다.", true, 3],
       ["CSS는 웹 페이지의 스타일과 레이아웃을 정의하는 데 사용된다.", true, 3],
       ["CSS에서 색상은 color 속성으로 설정할 수 있다.", true, 3],
-      ["&lt;body&gt; 태그에는 css 를 적용시킬 수 없다", true, 4],
+      ["&lt;body&gt; 태그에는 css 를 적용시킬 수 없다", false, 4],
       ["CSS에서 font-size 속성은 글꼴의 크기를 설정한다.", true, 4],
       ["CSS에서 #myId는 클래스 선택자를 나타낸다.", false, 4],
       ["JavaScript는 웹 페이지에 동적인 기능을 추가하는 데 사용된다.", true, 3],
@@ -277,6 +297,9 @@
     let timerInterval;
 
     function start() {
+      document.querySelector('#before').style.height = "0px";
+      document.querySelector('#before').style.display = "none";
+      document.querySelector('#inquiz').style.display = "block";
       quiztext.innerHTML = quiz[quiz_num][0];
       startTimer();
     }
@@ -301,7 +324,7 @@
       timerInterval = setInterval(() => {
         if (timeLeft <= 0) {
           clearInterval(timerInterval);
-
+          truefalse.push(false);
           timeLeft = 10;
           quiz_num++;
           if (quiz_num < quiz.length) {
@@ -355,7 +378,7 @@
       }
     }
 
-    start();
+   // start();
   </script>
 </body>
 
