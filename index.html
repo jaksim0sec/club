@@ -162,9 +162,9 @@
         <input class="button_head" type="button" onclick="window.location.href = '/index.html';" value="홈으로 돌아가기"
           style="top:10px; right:25px;">
         <input class="button_head" type="button" onclick="window.scrollTo({
-            top: 100,
-            behavior: 'smooth'
-          });" value="오늘의 목표" style="top:10px; right:255px;">
+                    top: 100,
+                    behavior: 'smooth'
+                  });" value="오늘의 목표" style="top:10px; right:255px;">
       </div><!--buttons_head_end-->
     </div><!--header_end-->
     <div id="setting">
@@ -194,10 +194,10 @@
             style="background: linear-gradient(150deg, #F8FFFF, #D4F4FA, #fff1d1, #FBC3AB); margin-left: 0px; color: #272727;border:none;"
             class="setting"
             onclick="
-          var randomColor = Math.floor(Math.random() * 16777216).toString(16);
-          let rdcolor =  '#' + ('000000' + randomColor).slice(-6);
+                  var randomColor = Math.floor(Math.random() * 16777216).toString(16);
+                  let rdcolor =  '#' + ('000000' + randomColor).slice(-6);
 
-          document.querySelector('body').style.backgroundColor= rdcolor; document.querySelector('body').style.color = '#272727';">#랜덤색상</button>
+                  document.querySelector('body').style.backgroundColor= rdcolor; document.querySelector('body').style.color = '#272727';">#랜덤색상</button>
 
 
 
@@ -216,7 +216,8 @@
           style="height:35px; background-color:#ECECEC; border-radius: 10px; margin-top: 10px; width: 85%;">
           <div class="label_saet" style="background-color: #FF7151; color: white; font-size: 13px; margin-top:10px;">신규
           </div>
-          <div style="display:inline; font-size: 12px;">요소들 사이의 충돌로 인하여 학습페이지에 문제가 발생하고 있습니다.
+          <div style="display:inline; font-size: 12px;">페이지 디자인을 포함한 전체 구성과 베이스 코드를 리뉴얼하였습니다. 또한 일부 설명의 내용을 구체적으로
+            수정하였습니다. 또한 편리성을 위하여 "목차" 기능을 추가하였습니다.
           </div>
           <button style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 10px;"
             onmouseover="this.style.backgroundColor='#ACACAC';" onmouseout="this.style.backgroundColor='#D3D3D3';"
@@ -226,35 +227,31 @@
       <center>
         <div id="per">
           <div class="basicbox" style="width:85%; height:150px;">
-            <div id="whattoday" style="display:inline-block;width:100%;"><div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
-            <div style="border-radius: 15px; border: 1px solid #9B9B9B; width: 60%;">
-              <div id="what1"
-                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">
-                ERROR</div>
-              <div style="display: inline;">▶</div>
-              <div id="what2"
-                style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">
-                ERROR</div>
-              <div style="display: inline;">◀</div>
-              <div id="what3"
-                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">
-                ERROR</div></div>
+            <div id="whattoday" style="display:inline-block;width:100%;">
+              <div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
+              <div style="border-radius: 15px; border: 1px solid #9B9B9B; width: 60%;">
+                <div id="what1"
+                  style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">
+                  ERROR</div>
+                <div style="display: inline;">▶</div>
+                <div id="what2"
+                  style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">
+                  ERROR</div>
+                <div style="display: inline;">◀</div>
+                <div id="what3"
+                  style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">
+                  ERROR</div>
+              </div>
             </div>
-        </div><!--per_end-->
-        
-      
-        <!--<div id="notice" style="width:85%; height:130px;background: linear-gradient(150deg, black, #7D7A7F, #444444, black,black,black);position: relative; " class="basicbox">
-          <div style="position: absolute; top:5px; left:5px">Express.js</div>
-        </div>-->
+          </div><!--per_end-->
+
+
+          <!--<div id="notice" style="width:85%; height:130px;background: linear-gradient(150deg, black, #7D7A7F, #444444, black,black,black);position: relative; " class="basicbox">
+                  <div style="position: absolute; top:5px; left:5px">Express.js</div>
+                </div>-->
       </center>
       <center>
-        <div style = "width:100%;justify-content: center;
-          align-items: center;">
-        <div style="width: 85%; height: 100%; position: absolute; justify-content: center; align-items: center; text-align: center;">
-          <div style="background-color: black; color: white; padding: 20px; border-radius: 10px;">
-            현재 사용할 수 없는 기능입니다.
-          </div>
-        </div></div>
+
         <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
           <div class="label_saet" style="background-color: #40F99B; color: white; font-size: 13px; margin-top:10px;">추천
           </div>
@@ -262,7 +259,12 @@
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">동아리의 모든 수업을 순서대로 배울 수 있습니다.</div>
           <button id="boxer0" onclick="
-            window.location.href='/'" value="시작하기"
+                    document.querySelector('#html_learn').style.display = 'block';
+                    document.querySelector('#css_learn').style.display = 'block';
+                    document.querySelector('#js_learn').style.display = 'block';
+                    document.querySelector('#main_learn').style.display = 'block';
+                    document.querySelector('#advanced_learn').style.display = 'block';
+                    document.querySelector('#base_learn').style.display = 'block';" value="시작하기"
             style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
@@ -272,7 +274,12 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">서버구동 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다.</div>
-          <button id="boxer1" onclick="window.location.href='/learnadv.html'" value="시작하기"
+          <button id="boxer1" onclick="document.querySelector('#html_learn').style.display = 'none';
+                    document.querySelector('#css_learn').style.display = 'none';
+                    document.querySelector('#js_learn').style.display = 'none';
+                    document.querySelector('#main_learn').style.display = 'none';
+                    document.querySelector('#advanced_learn').style.display = 'block';
+                    document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
             style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
@@ -282,7 +289,12 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">HTML 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">HTML 의 기본 문법과 활용을 배웁니다.</div>
-          <button id="boxer2" onclick="window.location.href='/learnhtml.html'" value="시작하기"
+          <button id="boxer2" onclick="document.querySelector('#html_learn').style.display = 'block';
+                    document.querySelector('#css_learn').style.display = 'none';
+                    document.querySelector('#js_learn').style.display = 'none';
+                    document.querySelector('#main_learn').style.display = 'none';
+                    document.querySelector('#advanced_learn').style.display = 'none';
+                    document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
             style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
@@ -292,7 +304,12 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">CSS 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">CSS 의 기본 문법과 활용을 배웁니다.</div>
-          <button id="boxer3" onclick="window.location.href='/learncss.html'" value="시작하기"
+          <button id="boxer3" onclick="document.querySelector('#html_learn').style.display = 'none';
+                    document.querySelector('#css_learn').style.display = 'block';
+                    document.querySelector('#js_learn').style.display = 'none';
+                    document.querySelector('#main_learn').style.display = 'none';
+                    document.querySelector('#advanced_learn').style.display = 'none';
+                    document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
             style="width: 100px; margin: 10px;">시작하기</button>
         </div>
 
@@ -302,21 +319,72 @@
           <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">JavaScript 학습하기</div>
           <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
           <div style="font-size: 12px; margin-top: 5px; width: 80%;">JavaScript 의 기본 문법과 활용을 배웁니다.</div>
-          <button id="boxer4" onclick="window.location.href='/learnjs.html'" value="시작하기"
+          <button id="boxer4" onclick="document.querySelector('#html_learn').style.display = 'none';
+                    document.querySelector('#css_learn').style.display = 'none';
+                    document.querySelector('#js_learn').style.display = 'block';
+                    document.querySelector('#main_learn').style.display = 'none';
+                    document.querySelector('#advanced_learn').style.display = 'none';
+                    document.querySelector('#base_learn').style.display = 'none';" value="시작하기"
             style="width: 100px; margin: 10px;">시작하기</button>
         </div>
       </center>
     </div><!--middle_header_end-->
 
     <div id="bodyer">
+      <center>
+        <div id="base_learn" class="basicbox" style="width: 90%;"></div><!--baseend-->
+        <div style="height:20px"></div>
+        <div id="html_learn" class="basicbox" style="width: 90%;"></div><!--htmlend-->
+        <div style="height:20px"></div>
+        <div id="js_learn" class="basicbox" style="width: 90%;"></div><!--jsend-->
+
+        <div style="height:20px"></div>
+        <div id="css_learn" class="basicbox" style="width: 90%;"><!--cssend-->
+
+        <div style="height:20px"></div>
+
+        <div id="advanced_learn" class="basicbox" style="width: 90%;"></div><!--adend-->
+        <div style="height:20px"></div>
+      </center>
     </div><!--bodyer_end-->
 
   </div><!--main_body_end-->
+  <script>
+              //close("all");
+  </script>
   <script>
     function get(el) {
       return document.querySelector(el);
     }
 
+    function close(type) {
+      if (type == "all") {
+        document.querySelector("#html_learn").style.display = "none";
+        document.querySelector("#css_learn").style.display = "none";
+        document.querySelector("#js_learn").style.display = "none";
+        document.querySelector("#main_learn").style.display = "none";
+        document.querySelector("#advanced_learn").style.display = "none";
+        document.querySelector("#base_learn").style.display = "none";
+      } else {
+        document.querySelector("#" + type + "_learn").style.display = "none";
+      }
+    }
+
+
+    function open(type) {
+      console.log("test");
+      if (type == "all") {
+        document.querySelector("#html_learn").style.display = "block";
+        document.querySelector("#css_learn").style.display = "block";
+        document.querySelector("#js_learn").style.display = "block";
+        document.querySelector("#main_learn").style.display = "block";
+        document.querySelector("#advanced_learn").style.display = "block";
+        document.querySelector("#base_learn").style.display = "block";
+      } else {
+        close("all");
+        document.querySelector("#" + type + "_learn").style.display = "block";
+      }
+    }
 
     function SettingWindowOPCL() {
       var settingWindow = document.querySelector('#settingwindow');
@@ -348,14 +416,16 @@
     document.querySelector("#what1").textContent = what[date.getMonth() - 4];
     document.querySelector("#what2").textContent = what[date.getMonth() - 3];
     document.querySelector("#what3").textContent = what[date.getMonth() - 2];
-    //var userAgent = navigator.userAgent;
+            //var userAgent = navigator.userAgent;
 
-    //console.log("User Agent:", userAgent);
-    //if (userAgent.match(/Mobile/i) || userAgent.match(/Mobi/i)) {
-       // window.alert("이 홈페이지 UI는 모바일 환경에서 적절하게 작동하지 않을 수 있습니다.")
-    //}
+            //console.log("User Agent:", userAgent);
+            //if (userAgent.match(/Mobile/i) || userAgent.match(/Mobi/i)) {
+               // window.alert("이 홈페이지 UI는 모바일 환경에서 적절하게 작동하지 않을 수 있습니다.")
+            //}
   </script>
 
 </body>
 
 </html>
+
+html_learn 같은 요소들의 높이가 개판인데 왜이럴까?
