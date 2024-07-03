@@ -1,0 +1,355 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>샛별중학교 코딩동아리 : 홈</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="https://ifh.cc/g/V1dY2n.png">
+  <style>
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    input[type="button"]:hover {
+      color: white;
+      background-color: #58FFA9;
+    }
+
+    button:hover {
+      background-color: #D8DAD9;
+    }
+
+    a:underline {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="button"] {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      background-color: #FDF9F6;
+      color: black;
+      height: 22px;
+      width: 110px;
+      border: none;
+      border-radius: 20px;
+
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .codespace {
+      background-color: #120629;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      color: white;
+    }
+
+    .basicbox {
+      background-color: white;
+      border: 1px solid #DADADA;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .button_head {
+      top: 15px;
+      background-color: white;
+      height: 22px;
+      width: 110px;
+      border: 1px solid #DADADA;
+      border-radius: 8px;
+      position: fixed;
+    }
+
+    .label_saet {
+      width: 45px;
+      font-weight: 700;
+      height: 18px;
+      display: inline-block;
+      border-radius: 5px;
+      margin: 5px;
+      font-size: 13px;
+    }
+
+    /* input[type="color"] 스타일 */
+    input[type="color"] {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    button {
+      width: 80px;
+      height: 22px;
+      border: 1px solid #CCCCCC;
+      border-radius: 10px;
+      background-color: white;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="color"]::-webkit-color-swatch {
+      border-radius: 30px;
+      border: none;
+    }
+
+    /* .tager 클래스 스타일 */
+    .tager {
+      border: 1px solid #CCCCCC;
+      border-radius: 15px;
+    }
+
+    /* 스크롤바 스타일 */
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      border: 3px solid transparent;
+      box-shadow: inset 6px 6px 0;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  </style>
+</head>
+
+<body style="background-color: #D1D4DA; margin: 0; padding: 0;">
+  <div id="main_body" style="width: 100%; background-color: white; margin: 0; padding: 0;">
+    <div id="header" style="">
+      <center>
+        <div style="height: 20px;"></div>
+        <a href="/index.html" id="logo" style="color: black;">
+          <div style="font-size: 50px; ">어서와!</div>
+          <div style="font-size: 30px; font-weight: bold; display: inline; margin-right: 0.5%; color: #40F99B;">코딩</div>
+          <div style="font-size: 30px; display: inline;">동아리</div>
+          <div style="font-size: 13px;">샛별중학교</div>
+          <hr color="white" style="margin: 2%;">
+        </a>
+      </center>
+      <div id="button_head">
+        <input class="button_head" type="button"
+          onclick="window.location.href = 'https://padlet.com/saetbyeolt240003/padlet-iuuw33c5xk5ngqki';"
+          value="동아리 페들렛" style="top:10px; right:140px;">
+        <input class="button_head" type="button" onclick="window.location.href = '/index.html';" value="홈으로 돌아가기"
+          style="top:10px; right:25px;">
+        <input class="button_head" type="button" onclick="window.scrollTo({
+            top: 100,
+            behavior: 'smooth'
+          });" value="오늘의 목표" style="top:10px; right:255px;">
+      </div><!--buttons_head_end-->
+    </div><!--header_end-->
+    <div id="setting">
+      <button id="settingbutton" onclick="SettingWindowOPCL()"
+        style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 20px; position:absolute; top: 10px; left: 10px;">⚙</button>
+      <div class="setting" id="settingwindow"
+        style="opacity: 0%; width: 320px; border: 1px solid #CCCCCC; height:auto; margin: 10px; border-radius: 5px; background-color: white; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); position: absolute; top:70px; left:10px;">
+        <div class="backgroundColor" style="margin: 10px;">
+          <div>배경색 설정</div>
+          <input type="color" class="setting" id="backgroundColor">
+          <button class="setting" onclick="changeBackgroundColor()"
+            style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
+        </div>
+        <div class="fontColor" style="margin: 10px;">
+          <div>글자색 지정(비추천 기능)</div>
+          <input type="color" class="setting" id="fontColor">
+          <button class="setting" onclick="changeFontColor()"
+            style="border: 1px solid #CCCCCC; color: #272727; border-radius: 10px;">색상 적용</button>
+        </div>
+        <div class="ColorReco" style="margin: 10px;">
+          <div>추천색상</div>
+          <button style="background-color: #DEBF9C; margin-left: 0px; border:none;" class="setting"
+            onclick="document.querySelector('body').style.backgroundColor = '#F4DFC7';document.querySelector('body').style.color = '#272727';">#카페같은</button>
+          <button style="background-color: #E2AE98; margin-left: 0px;border:none;" class="setting"
+            onclick="document.querySelector('body').style.backgroundColor = '#FFE6DB';document.querySelector('body').style.color = '#350303';">#봄이좋냐</button>
+          <button
+            style="background: linear-gradient(150deg, #F8FFFF, #D4F4FA, #fff1d1, #FBC3AB); margin-left: 0px; color: #272727;border:none;"
+            class="setting"
+            onclick="
+          var randomColor = Math.floor(Math.random() * 16777216).toString(16);
+          let rdcolor =  '#' + ('000000' + randomColor).slice(-6);
+
+          document.querySelector('body').style.backgroundColor= rdcolor; document.querySelector('body').style.color = '#272727';">#랜덤색상</button>
+
+
+
+
+        </div>
+      </div>
+    </div><!--setting_end-->
+
+    <button id="quiz" onclick="window.location.href = '/quiz.html';"
+      style="color: #272727; border-radius: 10px; width: 40px; height: 40px; margin: 10px; font-size: 14px; position:absolute; top: 10px; left: 60px; text-align: center;background: linear-gradient(150deg, #FFCECE, #FFBC9C, #FF4848, #FF4894,#FF48D4);border:none; font-weight: bold; color:white;">Quiz</button>
+
+
+    <div id="middle_header" style="height: 300px; width: 100%; background-color: white;justify-content:center;">
+      <center>
+        <div id="notice"
+          style="height:35px; background-color:#ECECEC; border-radius: 10px; margin-top: 10px; width: 85%;">
+          <div class="label_saet" style="background-color: #FF7151; color: white; font-size: 13px; margin-top:10px;">신규
+          </div>
+          <div style="display:inline; font-size: 12px;">요소들 사이의 충돌로 인하여 학습페이지에 문제가 발생하고 있습니다.
+          </div>
+          <button style="border: none; background-color:#D3D3D3; width: 50px; margin-left: 10px;"
+            onmouseover="this.style.backgroundColor='#ACACAC';" onmouseout="this.style.backgroundColor='#D3D3D3';"
+            onclick="document.querySelector('#notice').style.display='none';">Ⅹ</button>
+        </div><!--notice_end-->
+      </center>
+      <center>
+        <div id="per">
+          <div class="basicbox" style="width:85%; height:150px;">
+            <div id="whattoday" style="display:inline-block;width:100%;"><div style="margin: 10px; font-size: 18px; color: #454545; font-weight: bold;">오늘의 목표</div>
+            <div style="border-radius: 15px; border: 1px solid #9B9B9B; width: 60%;">
+              <div id="what1"
+                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2; color:#6E6F6E;">
+                ERROR</div>
+              <div style="display: inline;">▶</div>
+              <div id="what2"
+                style="width: 80%; border-radius: 10px; font-size: 16px; margin: 5px; display: inline-block; background-color:#84EEA6; font-weight:bold; color:white;">
+                ERROR</div>
+              <div style="display: inline;">◀</div>
+              <div id="what3"
+                style="width: 50%; border-radius: 10px; font-size: 13px; margin: 5px;background-color: #E2E2E2;color:#6E6F6E;">
+                ERROR</div></div>
+            </div>
+        </div><!--per_end-->
+        
+      
+        <!--<div id="notice" style="width:85%; height:130px;background: linear-gradient(150deg, black, #7D7A7F, #444444, black,black,black);position: relative; " class="basicbox">
+          <div style="position: absolute; top:5px; left:5px">Express.js</div>
+        </div>-->
+      </center>
+      <center>
+
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
+          <div class="label_saet" style="background-color: #40F99B; color: white; font-size: 13px; margin-top:10px;">추천
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">순서대로 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">동아리의 모든 수업을 순서대로 배울 수 있습니다.</div>
+          <button id="boxer0" onclick="
+            window.location.href='/'" value="시작하기"
+            style="width: 100px; margin: 10px;">시작하기</button>
+        </div>
+
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
+          <div class="label_saet" style="background-color: #FF5476; color: white; font-size: 13px; margin-top:10px;">심화
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">서버구동 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">더욱 본질적인 부분에 대해 배웁니다.</div>
+          <button id="boxer1" onclick="window.location.href='/learnadv.html'" value="시작하기"
+            style="width: 100px; margin: 10px;">시작하기</button>
+        </div>
+
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
+          <div class="label_saet" style="background-color: #FFAC54; color: white; font-size: 13px; margin-top:10px;">필수
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">HTML 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">HTML 의 기본 문법과 활용을 배웁니다.</div>
+          <button id="boxer2" onclick="window.location.href='/learnhtml.html'" value="시작하기"
+            style="width: 100px; margin: 10px;">시작하기</button>
+        </div>
+
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
+          <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">CSS 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">CSS 의 기본 문법과 활용을 배웁니다.</div>
+          <button id="boxer3" onclick="window.location.href='/learncss.html'" value="시작하기"
+            style="width: 100px; margin: 10px;">시작하기</button>
+        </div>
+
+        <div class="basicbox" style="width: 210px; height: 120px; margin-top: 20px; display: inline-block;">
+          <div class="label_saet" style="background-color: #DADADA; color: white; font-size: 13px; margin-top:10px;">일반
+          </div>
+          <div style="font-size: 14px; margin-top: 10px; display: inline-flex;">JavaScript 학습하기</div>
+          <div style="background-color: #DCDCDC; height: 1px; width: 70%; margin: 5px;"></div>
+          <div style="font-size: 12px; margin-top: 5px; width: 80%;">JavaScript 의 기본 문법과 활용을 배웁니다.</div>
+          <button id="boxer4" onclick="window.location.href='/learnjs.html'" value="시작하기"
+            style="width: 100px; margin: 10px;">시작하기</button>
+        </div>
+      </center>
+    </div><!--middle_header_end-->
+
+    <div id="bodyer">
+    </div><!--bodyer_end-->
+
+  </div><!--main_body_end-->
+  <script>
+    function get(el) {
+      return document.querySelector(el);
+    }
+
+
+    function SettingWindowOPCL() {
+      var settingWindow = document.querySelector('#settingwindow');
+      var SettingOPCL = document.querySelector('#settingbutton');
+
+      if (SettingOPCL.textContent === "x") {
+        settingWindow.style.opacity = 0;
+        SettingOPCL.textContent = "⚙";
+      }
+      else {
+        settingWindow.style.opacity = 1;
+        SettingOPCL.textContent = "x";
+      }
+    }
+
+    function changeBackgroundColor() {
+      var backgroundColor = document.querySelector('#backgroundColor').value;
+      document.querySelector('#main_body').style.backgroundColor = backgroundColor;
+    }
+
+    function changeFontColor() {
+      var fontColor = document.querySelector('#fontColor').value;
+      document.querySelector('#main_body').style.color = fontColor;
+    }
+    close("all");
+
+    let what = ["html 기본 문법 이해", "[동아리반일제] css 문법 이해", "JS 기본 문법과 html 접근 이해", "input 을 이용한 사용자 접근", "고급기술, 라이버리 활용", "미정", "미정", "미정"];
+    let date = new Date();
+    document.querySelector("#what1").textContent = what[date.getMonth() - 4];
+    document.querySelector("#what2").textContent = what[date.getMonth() - 3];
+    document.querySelector("#what3").textContent = what[date.getMonth() - 2];
+    //var userAgent = navigator.userAgent;
+
+    //console.log("User Agent:", userAgent);
+    //if (userAgent.match(/Mobile/i) || userAgent.match(/Mobi/i)) {
+       // window.alert("이 홈페이지 UI는 모바일 환경에서 적절하게 작동하지 않을 수 있습니다.")
+    //}
+  </script>
+
+</body>
+
+</html>
